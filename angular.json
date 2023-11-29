@@ -92,12 +92,12 @@
               "src/styles.css"
             ],
             "scripts": []
-          }
+          },
           "configurations": {
             "ci": {
               "watch": false,
               "progress": false,
-              "browsers": "ChromeHeadlessCI"
+              "browsers": "ChromeHeadless"
             }
           }
         }
