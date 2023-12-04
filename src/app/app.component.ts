@@ -12,6 +12,7 @@ import { FooterComponent } from './components/footer/footer.component';
   imports: [
     RouterLink,
     CommonModule,
+    RouterLink,
     RouterOutlet,
     NavigationComponent,
     HeaderComponent,
