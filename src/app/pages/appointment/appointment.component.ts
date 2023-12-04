@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+
 @Component({
   selector: 'app-appointment',
   standalone: true,
@@ -9,5 +10,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './appointment.component.css'
 })
 export class AppointmentComponent {
-
+  pageTitle: string = 'Agendamento';
 }
