@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 
 import { HomeComponent } from './pages/home/home.component';
 import { AppointmentComponent } from './pages/appointment/appointment.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 export const routes: Routes = [
     {
@@ -15,8 +16,13 @@ export const routes: Routes = [
         title: 'Personal Cleaner',
     },
     {
+        path: 'contact-us',
+        component: ContactUsComponent,
+        title: 'Contact Us Page',
+    },
+    {
         path: '**',
         redirectTo: '',
         pathMatch: 'full'
-    }
+    },
 ];
