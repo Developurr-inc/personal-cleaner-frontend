@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-contact-us',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  templateUrl: './contact-us.component.html',
+  styleUrl: './contact-us.component.css'
 })
-export class HeaderComponent {
+export class ContactUsComponent {
 
 }
