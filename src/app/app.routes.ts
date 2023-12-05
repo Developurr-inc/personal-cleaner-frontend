@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 
 import { HomeComponent } from './pages/home/home.component';
 import { AppointmentComponent } from './pages/appointment/appointment.component';
+import { ExpertiseComponent } from './pages/expertise/expertise.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 
@@ -18,7 +19,11 @@ export const routes: Routes = [
         title: 'Personal Cleaner',
     },
     {
-        path: 'contact-us',
+        path: 'expertise-areas',
+        component: ExpertiseComponent,
+        title: 'Áreas de Atuação',
+    },
+    {   path: 'contact-us',
         component: ContactUsComponent,
         title: 'Contact Us Page',
     },
