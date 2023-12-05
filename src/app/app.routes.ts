@@ -5,6 +5,7 @@ import { AppointmentComponent } from './pages/appointment/appointment.component'
 import { ExpertiseComponent } from './pages/expertise/expertise.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { FooterComponent } from './pages/footer/footer.component';
 
 
 export const routes: Routes = [
@@ -31,6 +32,11 @@ export const routes: Routes = [
         path: 'about-us',
         component: AboutUsComponent,
         title: 'About Us Page'
+    },
+    {
+        path: 'footer',
+        component: FooterComponent,
+        title: 'Footer Page'
     },
     {
         path: '**',
