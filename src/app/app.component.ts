@@ -3,8 +3,8 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
 import { NavigationComponent } from './components/navigation/navigation.component';
-import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+
 
 @Component({
   selector: 'app-root',
@@ -15,7 +15,6 @@ import { FooterComponent } from './components/footer/footer.component';
     RouterLink,
     RouterOutlet,
     NavigationComponent,
-    HeaderComponent,
     FooterComponent,
     NgOptimizedImage
   ],
