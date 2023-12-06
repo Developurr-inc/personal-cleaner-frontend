@@ -40,12 +40,18 @@ export class NavigationComponent {
       active: false
     }
   ];
+  menuOpen: boolean = false;
 
   constructor(private router: Router) {
     this.router.events.subscribe((event: any) => {
       this.routes.forEach(route => {
         route.active = this.router.url === route.path;
       });
+      this.menuOpen = false;
     });
+  }
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
   }
 }
