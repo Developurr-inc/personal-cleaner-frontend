@@ -45,6 +45,7 @@ export class NavigationComponent {
     }
   ];
   homeRoute: string = RouteUrlEnum.HOME;
+  menuOpen: boolean = false;
 
   constructor(private router: Router) {
     this.router.events.subscribe((event: any) => {
@@ -52,6 +53,11 @@ export class NavigationComponent {
         route.id = index;
         route.active = this.router.url === route.path;
       });
+      this.menuOpen = false;
     });
+  }
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
   }
 }
