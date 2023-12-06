@@ -34,11 +34,6 @@ export const routes: Routes = [
     title: `Personal Cleaner - ${RouteNameEnum.ABOUT_US}`,
   },
   {
-    path: '**',
-    redirectTo: '',
-    pathMatch: 'full'
-  },
-  {
         path: 'cta',
         component: CtaComponent,
         title: 'CTA Page'
@@ -58,5 +53,9 @@ export const routes: Routes = [
     component: ExpertiseComponent,
     title: 'Áreas de Atuação',
   },
-    
+  {
+    path: '**',
+    redirectTo: '',
+    pathMatch: 'full'
+  },
 ];
