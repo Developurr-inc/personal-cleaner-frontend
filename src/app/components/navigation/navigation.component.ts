@@ -51,7 +51,7 @@ export class NavigationComponent {
     this.router.events.subscribe((event: any) => {
       this.routes.forEach((route, index) => {
         route.id = index;
-        route.active = this.router.url === route.path;
+        route.active = this.router.url === `/${route.path}`;
       });
       this.menuOpen = false;
     });
