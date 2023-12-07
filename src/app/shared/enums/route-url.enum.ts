@@ -3,4 +3,5 @@ export enum RouteUrlEnum {
   APPOINTMENT = 'schedule-your-appointment',
   CONTACT_US = 'contact-us',
   ABOUT_US = 'about-us',
+  FAQ = 'faq',
 }

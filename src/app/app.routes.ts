@@ -2,13 +2,11 @@ import { Routes } from '@angular/router';
 
 import { HomeComponent } from './pages/home/home.component';
 import { AppointmentComponent } from './pages/appointment/appointment.component';
-import { ExpertiseComponent } from './pages/expertise/expertise.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
-import { FooterComponent } from './pages/footer/footer.component';
 import { RouteUrlEnum } from './shared/enums/route-url.enum';
 import { RouteNameEnum } from './shared/enums/route-name.enum';
-import { CtaComponent } from './pages/cta/cta.component';
+import { FaqComponent } from './pages/faq/faq.component';
 
 export const routes: Routes = [
 
@@ -33,21 +31,10 @@ export const routes: Routes = [
     title: `Personal Cleaner - ${RouteNameEnum.ABOUT_US}`,
   },
   {
-        path: 'cta',
-        component: CtaComponent,
-        title: 'CTA Page'
-
-    },
-    {
-        path: 'footer',
-        component: FooterComponent,
-        title: 'Footer Page'
-    },
-    {
-      path: '**',
-      redirectTo: '',
-      pathMatch: 'full'
-    },
+    path: 'faq',
+    component: FaqComponent,
+    title: `Personal Cleaner - ${RouteNameEnum.FAQ}`,
+  },
       {
     path: '**',
     redirectTo: '',
