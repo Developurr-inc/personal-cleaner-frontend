@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { CommonModule, NgOptimizedImage, provideImgixLoader } from '@angular/common';
 import { Router, RouterLink } from '@angular/router';
 
-import { RouteModel } from '../../shared/models/route.model';
-import { RouteUrlEnum } from '../../shared/enums/route-url.enum';
-import { RouteNameEnum } from '../../shared/enums/route-name.enum';
+import { RouteModel } from '../../models/route.model';
+import { RouteUrlEnum } from '../../enums/route-url.enum';
+import { RouteNameEnum } from '../../enums/route-name.enum';
 
 
 @Component({
