@@ -43,7 +43,7 @@ export const routes: Routes = [
     title: `Personal Cleaner - ${RouteNameEnum.FOOTER}`,
   },
   {
-    path: 'expertise-areas',
+    path: RouteUrlEnum.EXPERTISE,
     component: ExpertiseComponent,
     title: `Personal Cleaner - ${RouteNameEnum.EXPERTISE}`,
   },
