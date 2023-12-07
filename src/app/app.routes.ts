@@ -48,11 +48,6 @@ export const routes: Routes = [
     title: `Personal Cleaner - ${RouteNameEnum.EXPERTISE}`,
   },
   {
-    path: 'faq',
-    component: FaqComponent,
-    title: `Personal Cleaner - ${RouteNameEnum.FAQ}`
-  },
-  {
     path: '**',
     redirectTo: '',
     pathMatch: 'full'

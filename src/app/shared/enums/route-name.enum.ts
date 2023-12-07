@@ -6,5 +6,4 @@ export enum RouteNameEnum {
   CTA = 'Chamadas para ação',
   FOOTER = 'Footer',
   EXPERTISE = 'Áreas de Atuação',
-  FAQ = 'Perguntas comuns'
 }
