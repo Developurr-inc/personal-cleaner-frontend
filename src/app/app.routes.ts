@@ -6,7 +6,6 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { CtaComponent } from './pages/cta/cta.component';
-import { FooterComponent } from './pages/footer/footer.component';
 import { ExpertiseComponent } from './pages/expertise/expertise.component';
 import { RouteUrlEnum } from './shared/enums/route-url.enum';
 import { RouteNameEnum } from './shared/enums/route-name.enum';
@@ -37,11 +36,6 @@ export const routes: Routes = [
     path: RouteUrlEnum.CTA,
     component: CtaComponent,
     title: `Personal Cleaner - ${RouteNameEnum.CTA}`,
-  },
-  {
-    path: RouteUrlEnum.FOOTER,
-    component: FooterComponent,
-    title: `Personal Cleaner - ${RouteNameEnum.FOOTER}`,
   },
   {
     path: RouteUrlEnum.EXPERTISE,
