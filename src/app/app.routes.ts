@@ -33,19 +33,23 @@ export const routes: Routes = [
     title: `Personal Cleaner - ${RouteNameEnum.ABOUT_US}`,
   },
   {
+    path: RouteUrlEnum.CTA,
+    component: CtaComponent,
+    title: `Personal Cleaner - ${RouteNameEnum.CTA}`,
+  },
+  {
+    path: RouteUrlEnum.FOOTER,
+    component: FooterComponent,
+    title: `Personal Cleaner - ${RouteNameEnum.FOOTER}`,
+  },
+  {
+    path: RouteUrlEnum.EXPERTISE,
+    component: ExpertiseComponent,
+    title: `Personal Cleaner - ${RouteNameEnum.EXPERTISE}`,
+  },
+  {
     path: '**',
     redirectTo: '',
     pathMatch: 'full'
   },
-  {
-        path: 'cta',
-        component: CtaComponent,
-        title: 'CTA Page'
-
-    },
-    {
-        path: 'footer',
-        component: FooterComponent,
-        title: 'Footer Page'
-    },
 ];
