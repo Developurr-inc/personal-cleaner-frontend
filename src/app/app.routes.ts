@@ -5,11 +5,10 @@ import { AppointmentComponent } from './pages/appointment/appointment.component'
 import { ExpertiseComponent } from './pages/expertise/expertise.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
-import { FaqsComponent } from './pages/faqs/faqs.component';
 import { FooterComponent } from './pages/footer/footer.component';
-import { CtaComponent } from './pages/cta/cta.component';
 import { RouteUrlEnum } from './shared/enums/route-url.enum';
 import { RouteNameEnum } from './shared/enums/route-name.enum';
+import { CtaComponent } from './pages/cta/cta.component';
 
 export const routes: Routes = [
 
@@ -37,23 +36,19 @@ export const routes: Routes = [
         path: 'cta',
         component: CtaComponent,
         title: 'CTA Page'
-  },
-  {
-      path: 'footer',
-      component: FooterComponent,
-      title: 'Footer Page'
-  },
-  {
-    path: 'faqs',
-    component: FaqsComponent,
-    title: 'FAQS',
-  },
-  {
-    path: 'expertise-areas',
-    component: ExpertiseComponent,
-    title: 'Áreas de Atuação',
-  },
-  {
+
+    },
+    {
+        path: 'footer',
+        component: FooterComponent,
+        title: 'Footer Page'
+    },
+    {
+      path: '**',
+      redirectTo: '',
+      pathMatch: 'full'
+    },
+      {
     path: '**',
     redirectTo: '',
     pathMatch: 'full'
