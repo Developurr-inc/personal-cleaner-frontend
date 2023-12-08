@@ -4,68 +4,23 @@
       Frequently Asked Questions
     </span>
   </div>
+  @for (faq of faqs; track faq.id){
   <div>
     <div class="flex place-content-between mt-6 mb-3">
       <p class="text-lg font-semibold dark:text-white">
-        Os nossos produtos possuem alguma certificação?
+        {{faq.question}}
       </p>
-        <button onclick="myFunction(this)" class="inline-block cursor-pointer w-max pl-6">
-          <div class="w-[1.50px] h-3 rounded bg-black dark:bg-white relative left-[5.25px] bottom-[-6.5px]"></div>
-          <div class="w-3 h-[1.50px] rounded bg-black dark:bg-white"></div>
+        <button (click)="toggleDescription(faq.id)" class="inline-block cursor-pointer w-max pl-3 ">
+          <div class="w-[1.50px] h-3 rounded bg-black dark:bg-white relative left-[5.256px] bottom-[-6.69px] duration-300 transform-gpu transition-transform{{ faq.isOpen ? ' rotate-90' : '' }}"></div>
+          <div class="w-3 h-[1.50px] rounded bg-black dark:bg-white duration-500 transform-gpu transition-transform{{ faq.isOpen ? ' rotate-180' : '' }}"></div>
         </button>
     </div>
-    <div>
-      <p class="mb-6 font-normal mr-12" id="faq1">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore animi voluptatum praesentium cupiditate exercitationem! Perferendis pariatur ipsam saepe deleniti. Doloremque consequatur hic ab itaque ipsa nihil expedita, inventore perspiciatis nostrum?
+    <div class="transform {{ faq.isOpen ? 'block' : 'hidden' }}">
+      <p class="mb-6 font-normal mr-7" id="faq1">
+        {{faq.answer}}
       </p>
     </div>
   </div>
-  <div>
-    <div class="flex place-content-between mt-6 mb-3">
-      <p class="text-lg font-semibold dark:text-white">
-        Possuímos promoções em compras de atacado?
-      </p>
-        <button onclick="myFunction(this)" class="inline-block cursor-pointer w-max pl-6">
-          <div class="w-[1.50px] h-3 rounded bg-black dark:bg-white relative left-[5.25px] bottom-[-6.5px]"></div>
-          <div class="w-3 h-[1.50px] rounded bg-black dark:bg-white"></div>
-        </button>
-    </div>
-    <div>
-      <p class="mb-6 font-normal mr-12" id="faq2">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, pariatur voluptates. Dolore nostrum beatae inventore quibusdam iusto tenetur nobis perferendis magnam libero nulla vel, sint ducimus voluptatibus eius quam ipsam!
-      </p>
-    </div>
-  </div>
-  <div>
-    <div class="flex place-content-between mt-6 mb-3">
-      <p class="text-lg font-semibold dark:text-white">
-        Como é feito o cálculo para estimar a quantidade de produtos necessários para uma semana?
-      </p>
-        <button onclick="myFunction(this)" class="inline-block cursor-pointer w-max pl-6 leading-[56px]">
-          <div class="w-[1.50px] h-3 rounded bg-black dark:bg-white relative left-[5.25px] bottom-[-6.5px]"></div>
-          <div class="w-3 h-[1.50px] rounded bg-black dark:bg-white"></div>
-        </button>
-    </div>
-    <div>
-      <p class="mb-6 font-normal mr-12" id="faq3">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores omnis sequi neque, quos architecto impedit necessitatibus commodi voluptates suscipit, nulla accusamus delectus cupiditate expedita facere quibusdam, aliquam fuga culpa! Nam?
-      </p>
-    </div>
-  </div>
-  <div>
-    <div class="flex place-content-between mt-6 mb-3">
-      <p class="text-lg font-semibold dark:text-white">
-        Atendemos nos finais de semana e feriados?
-      </p>
-        <button onclick="myFunction(this)" class="inline-block cursor-pointer w-max pl-6">
-          <div class="w-[1.50px] h-3 rounded bg-black dark:bg-white relative left-[5.25px] bottom-[-6.5px]"></div>
-          <div class="w-3 h-[1.50px] rounded bg-black dark:bg-white"></div>
-        </button>
-    </div>
-    <div>
-      <p class="mb-6 font-normal mr-12" id="faq4">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dignissimos autem ea temporibus in, beatae, et non voluptates corporis qui repellendus quibusdam nulla a asperiores! Nemo, odio? Repudiandae, minus assumenda.
-      </p>
-    </div>
-  </div>
+  }
+
 </section>

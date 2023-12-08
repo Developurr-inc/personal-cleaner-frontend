@@ -44,6 +44,7 @@ export class NavigationComponent {
       active: false
     }
   ];
+  
   homeRoute: string = RouteUrlEnum.HOME;
   menuOpen: boolean = false;
 
