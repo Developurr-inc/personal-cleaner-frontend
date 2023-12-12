@@ -11,7 +11,6 @@ import { RouteNameEnum } from './shared/enums/route-name.enum';
 import { CtaComponent } from './pages/cta/cta.component';
 
 export const routes: Routes = [
-
   {
     path: RouteUrlEnum.HOME,
     component: HomeComponent,
@@ -45,6 +44,6 @@ export const routes: Routes = [
   {
     path: '**',
     redirectTo: '',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
 ];
