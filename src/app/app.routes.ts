@@ -11,7 +11,6 @@ import { RouteUrlEnum } from './shared/enums/route-url.enum';
 import { RouteNameEnum } from './shared/enums/route-name.enum';
 
 export const routes: Routes = [
-
   {
     path: RouteUrlEnum.HOME,
     component: HomeComponent,
@@ -50,6 +49,6 @@ export const routes: Routes = [
   {
     path: '**',
     redirectTo: '',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
 ];
