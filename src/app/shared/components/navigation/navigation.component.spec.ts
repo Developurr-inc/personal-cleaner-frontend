@@ -9,9 +9,8 @@ describe('NavigationComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NavigationComponent, RouterTestingModule]
-    })
-    .compileComponents();
+      imports: [NavigationComponent, RouterTestingModule],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(NavigationComponent);
     component = fixture.componentInstance;
@@ -20,5 +19,19 @@ describe('NavigationComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should have four routes', () => {
+    expect(component.routes.length).toEqual(4);
+  });
+
+  it('should have home route set to RouteUrlEnum.HOME', () => {
+    expect(component.homeRoute).toEqual('');
+  });
+
+  it('should toggle menuOpen on toggleMenu call', () => {
+    component.menuOpen = false;
+    component.toggleMenu();
+    expect(component.menuOpen).toBeTrue();
   });
 });
