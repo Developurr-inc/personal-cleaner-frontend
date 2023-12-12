@@ -1,141 +1,139 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 #logo {
-    height: 34px;
+  height: 34px;
 }
 
-h1{
-    font-size: 19px;
-    padding: 16px;
+h1 {
+  font-size: 19px;
+  padding: 16px;
 }
 
 main {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 h2 {
-    text-align: center;
-    font-size: 34px;
-    width: 275px;
-    margin: 32px auto;
+  text-align: center;
+  font-size: 34px;
+  width: 275px;
+  margin: 32px auto;
 }
 
 .hello {
-    color: #2B80BB;
+  color: #2b80bb;
 }
 
 #subtitleDiv {
-    margin: 16px;
+  margin: 16px;
 }
 
 .headerDiv1 {
-    background-color: rgba(22, 22, 22, 0.4);
-    color:white;
+  background-color: rgba(22, 22, 22, 0.4);
+  color: white;
 }
 
-#div1 {/*deixando a div dinâmica com o scroll da página e ao mesmo tempo com efeito de embaçamento(blur)*/
-    position: sticky;
-    top:0;
-    /**/
-    backdrop-filter: blur(10px);
-    padding: 4px 8px;
+#div1 {
+  /*deixando a div dinâmica com o scroll da página e ao mesmo tempo com efeito de embaçamento(blur)*/
+  position: sticky;
+  top: 0;
+  /**/
+  backdrop-filter: blur(10px);
+  padding: 4px 8px;
 }
 
 footer {
-    margin-top: 8px;
-    padding: 8px 32px;
-    color: #6E6E73;
-    background-color: #343434;
+  margin-top: 8px;
+  padding: 8px 32px;
+  color: #6e6e73;
+  background-color: #343434;
 }
 
 header {
-    background-color: #717171;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 32px;
+  background-color: #717171;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
 }
 
 #bigScreens {
-    display: none;
+  display: none;
 }
 
-@media (min-width: 481px){
-
+@media (min-width: 481px) {
 }
 
 .required {
-    color: #2B80BB;
-    font-weight: bold;
+  color: #2b80bb;
+  font-weight: bold;
 }
-
 
 .textContent {
-    padding: 8px 16px;
+  padding: 8px 16px;
 }
 
-@media(min-width: 500px){
-    .textContent{
-        width: 550px;
-            
-    }
+@media (min-width: 500px) {
+  .textContent {
+    width: 550px;
+  }
 
-    .textContentArea{
-        display: flex;
-        justify-content: center;
-    }
+  .textContentArea {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 img {
-    margin: 16px 0px;
+  margin: 16px 0px;
 }
 
 #calculadora {
-    width: 100%;
+  width: 100%;
 }
 
 #bussola {
-    width: 100%;
+  width: 100%;
 }
 
-@media(min-width: 500px){
-    .imageContentArea {
-        display: flex;
-        justify-content: center;
-    }
+@media (min-width: 500px) {
+  .imageContentArea {
+    display: flex;
+    justify-content: center;
+  }
 
-    #calculadora, #bussola{
-        width: 500px;
-    }
+  #calculadora,
+  #bussola {
+    width: 500px;
+  }
 }
 
 button {
-    font-size:large;
-    font-weight: bold;
-    text-shadow: 0px 0px 2px black;
-    color: white;
-    background-color: #2B80BB;
-    border-radius: 50px;
-    padding: 4px;
-    margin: 10px;
-    box-shadow: 0px 0px 2.5px whitesmoke;
-    cursor: pointer;
-    padding: 10px 75px;
+  font-size: large;
+  font-weight: bold;
+  text-shadow: 0px 0px 2px black;
+  color: white;
+  background-color: #2b80bb;
+  border-radius: 50px;
+  padding: 4px;
+  margin: 10px;
+  box-shadow: 0px 0px 2.5px whitesmoke;
+  cursor: pointer;
+  padding: 10px 75px;
 }
 /*centralização horizontal do button seguindo o elemento pai*/
 #buttonArea {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 button:active {
-    transform: scale(0.95);
-    transition: ease 0.15s;
-    background-color: #2b7fbbdf;
+  transform: scale(0.95);
+  transition: ease 0.15s;
+  background-color: #2b7fbbdf;
 }
-

@@ -9,9 +9,8 @@ describe('NavigationComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NavigationComponent, RouterTestingModule]
-    })
-      .compileComponents();
+      imports: [NavigationComponent, RouterTestingModule],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(NavigationComponent);
     component = fixture.componentInstance;

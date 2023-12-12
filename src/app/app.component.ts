@@ -5,7 +5,6 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { NavigationComponent } from './shared/components/navigation/navigation.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 
-
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -16,11 +15,9 @@ import { FooterComponent } from './shared/components/footer/footer.component';
     RouterOutlet,
     NavigationComponent,
     FooterComponent,
-    NgOptimizedImage
+    NgOptimizedImage,
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
-export class AppComponent {
-
-}
+export class AppComponent {}

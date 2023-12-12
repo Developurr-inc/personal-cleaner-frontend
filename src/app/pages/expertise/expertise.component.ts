@@ -6,8 +6,6 @@ import { NgOptimizedImage } from '@angular/common';
   standalone: true,
   imports: [NgOptimizedImage],
   templateUrl: './expertise.component.html',
-  styleUrl: './expertise.component.css'
+  styleUrl: './expertise.component.css',
 })
-export class ExpertiseComponent {
-
-}
+export class ExpertiseComponent {}

@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
-import { CommonModule, NgOptimizedImage, provideImgixLoader } from '@angular/common';
+import {
+  CommonModule,
+  NgOptimizedImage,
+  provideImgixLoader,
+} from '@angular/common';
 import { Router, RouterLink } from '@angular/router';
 
 import { RouteModel } from '../../models/route.model';
 import { RouteUrlEnum } from '../../enums/route-url.enum';
 import { RouteNameEnum } from '../../enums/route-name.enum';
-
 
 @Component({
   selector: 'app-navigation',
@@ -13,9 +16,7 @@ import { RouteNameEnum } from '../../enums/route-name.enum';
   imports: [CommonModule, NgOptimizedImage, RouterLink],
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.css',
-  providers: [
-    provideImgixLoader('http://localhost:4200/assets'),
-  ]
+  providers: [provideImgixLoader('http://localhost:4200/assets')],
 })
 export class NavigationComponent {
   routes: RouteModel[] = [
@@ -23,26 +24,26 @@ export class NavigationComponent {
       id: undefined,
       name: RouteNameEnum.HOME,
       path: RouteUrlEnum.HOME,
-      active: false
+      active: false,
     },
     {
       id: undefined,
       name: RouteNameEnum.ABOUT_US,
       path: RouteUrlEnum.ABOUT_US,
-      active: false
+      active: false,
     },
     {
       id: undefined,
       name: RouteNameEnum.CONTACT_US,
       path: RouteUrlEnum.CONTACT_US,
-      active: false
+      active: false,
     },
     {
       id: undefined,
       name: RouteNameEnum.APPOINTMENT,
       path: RouteUrlEnum.APPOINTMENT,
-      active: false
-    }
+      active: false,
+    },
   ];
   homeRoute: string = RouteUrlEnum.HOME;
   menuOpen: boolean = false;
