@@ -5,7 +5,6 @@ import { AppointmentComponent } from './pages/appointment/appointment.component'
 import { ExpertiseComponent } from './pages/expertise/expertise.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
-import { FooterComponent } from './shared/components/footer/footer.component';
 import { RouteUrlEnum } from './shared/enums/route-url.enum';
 import { RouteNameEnum } from './shared/enums/route-name.enum';
 import { CtaComponent } from './pages/cta/cta.component';
