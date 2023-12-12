@@ -6,6 +6,6 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './cta.component.html',
-  styleUrl: './cta.component.css'
+  styleUrl: './cta.component.css',
 })
 export class CtaComponent {}
