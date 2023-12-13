@@ -59,7 +59,7 @@
   <div
     class="flex flex-col flex-wrap items-stretch justify-between gap-6 py-8 md:flex-row-reverse md:items-center"
   >
-    <div class="flex items-center justify-start gap-2">
+    <div class="flex flex-wrap items-center justify-start gap-2">
       @for (socialMedia of socialMedias; track socialMedia.id) {
         <a [href]="socialMedia.link" target="_blank">
           <svg
