@@ -4,7 +4,8 @@ import { Router, RouterLink } from '@angular/router';
 
 import { RouteModel } from '../../models/route.model';
 import { RouteUrlEnum } from '../../enums/route-url.enum';
-import {MAIN_ROUTES} from "../../consts/main-routes.const";
+import { MAIN_ROUTES } from "../../consts/main-routes.const";
+import { RouteNameEnum } from "../../enums/route-name.enum";
 
 @Component({
   selector: 'app-navigation',
@@ -14,9 +15,10 @@ import {MAIN_ROUTES} from "../../consts/main-routes.const";
   styleUrl: './navigation.component.css',
 })
 export class NavigationComponent {
-  routes: RouteModel[] = MAIN_ROUTES;
+  protected readonly RouteUrlEnum = RouteUrlEnum;
+  protected readonly RouteNameEnum = RouteNameEnum;
 
-  homeRoute: string = RouteUrlEnum.HOME;
+  routes: RouteModel[] = MAIN_ROUTES;
   menuOpen: boolean = false;
 
   constructor(private router: Router) {
