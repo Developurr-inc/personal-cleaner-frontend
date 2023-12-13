@@ -34,14 +34,8 @@ export class NavigationComponent {
     },
     {
       id: undefined,
-      name: RouteNameEnum.CONTACT_US,
-      path: RouteUrlEnum.CONTACT_US,
-      active: false,
-    },
-    {
-      id: undefined,
-      name: RouteNameEnum.APPOINTMENT,
-      path: RouteUrlEnum.APPOINTMENT,
+      name: RouteNameEnum.MESSAGE,
+      path: RouteUrlEnum.MESSAGE,
       active: false,
     },
   ];
