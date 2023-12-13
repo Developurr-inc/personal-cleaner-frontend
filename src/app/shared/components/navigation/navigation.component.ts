@@ -4,7 +4,7 @@ import { Router, RouterLink } from '@angular/router';
 
 import { RouteModel } from '../../models/route.model';
 import { RouteUrlEnum } from '../../enums/route-url.enum';
-import { RouteNameEnum } from '../../enums/route-name.enum';
+import {MAIN_ROUTES} from "../../consts/main-routes.const";
 
 @Component({
   selector: 'app-navigation',
@@ -14,33 +14,14 @@ import { RouteNameEnum } from '../../enums/route-name.enum';
   styleUrl: './navigation.component.css',
 })
 export class NavigationComponent {
-  routes: RouteModel[] = [
-    {
-      id: undefined,
-      name: RouteNameEnum.HOME,
-      path: RouteUrlEnum.HOME,
-      active: false,
-    },
-    {
-      id: undefined,
-      name: RouteNameEnum.ABOUT_US,
-      path: RouteUrlEnum.ABOUT_US,
-      active: false,
-    },
-    {
-      id: undefined,
-      name: RouteNameEnum.MESSAGE,
-      path: RouteUrlEnum.MESSAGE,
-      active: false,
-    },
-  ];
+  routes: RouteModel[] = MAIN_ROUTES;
+
   homeRoute: string = RouteUrlEnum.HOME;
   menuOpen: boolean = false;
 
   constructor(private router: Router) {
     this.router.events.subscribe(() => {
-      this.routes.forEach((route, index) => {
-        route.id = index;
+      this.routes.forEach((route) => {
         route.active = this.router.url === `/${route.path}`;
       });
       this.menuOpen = false;

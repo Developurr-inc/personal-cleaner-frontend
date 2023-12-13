@@ -1,5 +1,5 @@
 export type RouteModel = {
-  id: undefined | number;
+  id: number;
   name: string;
   path: string;
   active: boolean;
