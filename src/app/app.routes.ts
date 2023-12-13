@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { RouteUrlEnum } from './shared/enums/route-url.enum';
 import { RouteNameEnum } from './shared/enums/route-name.enum';
-import { AppointmentComponent } from "./pages/appointment/appointment.component";
+import { AppointmentComponent } from './pages/appointment/appointment.component';
 
 export const routes: Routes = [
   {

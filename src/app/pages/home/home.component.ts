@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {CtaComponent} from "../../shared/components/cta/cta.component";
+import { CtaComponent } from '../../shared/components/cta/cta.component';
 
 @Component({
   selector: 'app-home',
