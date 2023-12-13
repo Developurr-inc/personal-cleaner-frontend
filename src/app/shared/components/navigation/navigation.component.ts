@@ -1,9 +1,5 @@
 import { Component } from '@angular/core';
-import {
-  CommonModule,
-  NgOptimizedImage,
-  provideImgixLoader,
-} from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Router, RouterLink } from '@angular/router';
 
 import { RouteModel } from '../../models/route.model';
@@ -16,7 +12,6 @@ import { RouteNameEnum } from '../../enums/route-name.enum';
   imports: [CommonModule, NgOptimizedImage, RouterLink],
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.css',
-  providers: [provideImgixLoader('http://localhost:4200/assets')],
 })
 export class NavigationComponent {
   routes: RouteModel[] = [
@@ -43,7 +38,7 @@ export class NavigationComponent {
   menuOpen: boolean = false;
 
   constructor(private router: Router) {
-    this.router.events.subscribe((event: any) => {
+    this.router.events.subscribe(() => {
       this.routes.forEach((route, index) => {
         route.id = index;
         route.active = this.router.url === `/${route.path}`;
