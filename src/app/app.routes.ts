@@ -1,14 +1,9 @@
 import { Routes } from '@angular/router';
 
 import { HomeComponent } from './pages/home/home.component';
-import { AppointmentComponent } from './pages/appointment/appointment.component';
-import { ExpertiseComponent } from './pages/expertise/expertise.component';
-import { ContactUsComponent } from './pages/contact-us/contact-us.component';
-import { AboutUsComponent } from './pages/about-us/about-us.component';
-import { FooterComponent } from './shared/components/footer/footer.component';
 import { RouteUrlEnum } from './shared/enums/route-url.enum';
 import { RouteNameEnum } from './shared/enums/route-name.enum';
-import { CtaComponent } from './pages/cta/cta.component';
+import { AppointmentComponent } from './pages/appointment/appointment.component';
 
 export const routes: Routes = [
   {
@@ -17,29 +12,9 @@ export const routes: Routes = [
     title: `Personal Cleaner - ${RouteNameEnum.HOME}`,
   },
   {
-    path: RouteUrlEnum.APPOINTMENT,
+    path: RouteUrlEnum.MESSAGE,
     component: AppointmentComponent,
-    title: `Personal Cleaner - ${RouteNameEnum.APPOINTMENT}`,
-  },
-  {
-    path: RouteUrlEnum.CONTACT_US,
-    component: ContactUsComponent,
-    title: `Personal Cleaner - ${RouteNameEnum.CONTACT_US}`,
-  },
-  {
-    path: RouteUrlEnum.ABOUT_US,
-    component: AboutUsComponent,
-    title: `Personal Cleaner - ${RouteNameEnum.ABOUT_US}`,
-  },
-  {
-    path: RouteUrlEnum.CTA,
-    component: CtaComponent,
-    title: `Personal Cleaner - ${RouteNameEnum.CTA}`,
-  },
-  {
-    path: RouteUrlEnum.EXPERTISE,
-    component: ExpertiseComponent,
-    title: `Personal Cleaner - ${RouteNameEnum.EXPERTISE}`,
+    title: `Personal Cleaner - ${RouteNameEnum.MESSAGE}`,
   },
   {
     path: '**',
