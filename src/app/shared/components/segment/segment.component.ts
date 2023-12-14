@@ -13,6 +13,7 @@ import { SEGMENTS } from '../../consts/segments.const';
 export class SegmentComponent {
   segments = SEGMENTS;
 
+  id = -1;
   title = '';
   subtitle = '';
   content = '';
@@ -20,6 +21,7 @@ export class SegmentComponent {
   color = '';
 
   constructor() {
+    this.id = this.segments[0].id;
     this.title = this.segments[0].title;
     this.subtitle = this.segments[0].subtitle;
     this.content = this.segments[0].content;
@@ -30,6 +32,7 @@ export class SegmentComponent {
   switchCtaContent(id: number) {
     this.segments.forEach((segment) => {
       if (segment.id === id) {
+        this.id = segment.id;
         this.title = segment.title;
         this.subtitle = segment.subtitle;
         this.content = segment.content;
@@ -50,4 +53,6 @@ export class SegmentComponent {
       .getElementById('scrolling-container')
       ?.scrollBy({ left: -150, behavior: 'smooth' });
   }
+
+  protected readonly Boolean = Boolean;
 }

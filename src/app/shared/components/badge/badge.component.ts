@@ -10,4 +10,5 @@ import { Component, Input } from '@angular/core';
 export class BadgeComponent {
   @Input() title: string = 'Please fill the title';
   @Input() color: string = 'bg-gray-500';
+  @Input() active: boolean = false;
 }
