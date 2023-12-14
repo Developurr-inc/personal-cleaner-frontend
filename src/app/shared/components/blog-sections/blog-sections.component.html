@@ -1,0 +1,32 @@
+<section class="w-full">
+  <div class="text-center">
+    <h2 class="mt-20 text-3xl font-extrabold dark:text-gray-100">
+      Nossos Serviços
+    </h2>
+    <p class="mb-16 mt-2 text-gray-600 dark:text-gray-300">
+      Learn how to grow your business with our expert advice
+    </p>
+  </div>
+  <div
+    class="items-center justify-center space-y-10 lg:flex lg:space-x-4 lg:space-y-0"
+  >
+    @for (service of services; track service.id) {
+      <!-- <img src="{{ service.image }}" alt="" class="rounded-2xl mx-6 lg:w-1/5 sm:w-screen sm:h lg:h-96 object-cover"> -->
+      <div class="relative sm:w-full lg:h-96 lg:w-1/5">
+        <img
+          src="{{ service.image }}"
+          alt=""
+          class="h-96 w-full rounded-2xl object-cover"
+        />
+        <div
+          class="absolute inset-0 rounded-2xl bg-gradient-to-t from-gray-900 via-gray-900/40"
+        ></div>
+        <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
+          <h3 class="text-1xl z-10 font-bold text-white">
+            {{ service.title }}
+          </h3>
+        </div>
+      </div>
+    }
+  </div>
+</section>
