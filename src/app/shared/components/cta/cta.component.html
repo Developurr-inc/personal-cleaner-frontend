@@ -11,7 +11,9 @@
     class="my-24 px-6 md:my-0 md:flex md:h-[30rem] md:w-2/3 md:flex-col md:justify-center md:ps-16 lg:w-1/2 lg:ps-20"
   >
     <h3
-      class="text-md mb-2 font-bold {{ !subtitle ? 'hidden' : '' }} {{ color.replace('bg-', 'text-') }}"
+      class="text-md mb-2 font-bold {{ !subtitle ? 'hidden' : '' }} {{
+        color.replace('bg-', 'text-')
+      }}"
     >
       {{ subtitle }}
     </h3>
