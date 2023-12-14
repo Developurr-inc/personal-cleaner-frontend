@@ -1,0 +1,25 @@
+<section class="divide-y divide-gray-200 dark:divide-gray-700 text-black dark:text-gray-300 p-6 pt-12 lg:px-8 max-w-5xl mx-auto">
+    <span class=" flex justify-start font-semibold text-2xl dark:text-white pb-10">
+      Frequently Asked Questions
+    </span>
+    <!--For para automatzar a criação das perguntas e respostas presentes no doc faqs.component.ts-->
+  @for (faq of faqs; track faq.id){
+  <div>
+    <div class="flex place-content-between pt-6 mb-6">
+      <p class="text-lg font-semibold dark:text-white">
+        {{faq.question}}
+      </p><!--caso não dar certo colocar no button -->
+        <button id="botao"(click)="toggleDescription(faq.id)" class="inline-block cursor-pointer w-max pl-3">
+          <div class="w-[1.50px] h-3 rounded bg-black dark:bg-white duration-300 relative bottom-[-1.5px] transform-gpu transition-transform{{ faq.isOpen ? ' rotate-90' : '' }}"></div>
+          <div class="w-3 h-[1.50px] rounded bg-black dark:bg-white relative left-[-5.5px] bottom-[5.5px] duration-500 transform-gpu transition-transform{{ faq.isOpen ? ' rotate-180' : '' }}"></div>
+        </button>
+    </div>
+    <div class="transform-gpu duration-1000 transition-all origin-top {{ faq.isOpen ? 'h-20' : ' scale-0 h-0 opacity-0' }}">
+      <p class="resposta mb-6 font-normal me-7" id="faqs1">
+        {{faq.answer}}
+      </p>
+    </div>
+  </div>
+  }
+
+</section>

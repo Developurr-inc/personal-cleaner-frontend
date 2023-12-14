@@ -1,4 +1,5 @@
 export enum RouteNameEnum {
   HOME = 'Home',
-  MESSAGE = 'Contato',
+  APPOINTMENT = 'Agendamento',
+  FAQS = 'Perguntas Comuns',
 }
