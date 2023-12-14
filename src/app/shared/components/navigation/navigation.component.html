@@ -1,57 +1,33 @@
-<header
-  class="sticky top-0 z-50 bg-white/95 shadow backdrop-blur-xl backdrop-saturate-150 dark:bg-slate-800/95"
->
-  <div
-    class="mx-auto max-w-7xl divide-y divide-gray-200 px-2 dark:divide-slate-700 sm:px-6 lg:px-8"
-  >
+<header class="sticky top-0 z-50 bg-white/95 shadow backdrop-blur-xl backdrop-saturate-150 dark:bg-slate-800/95">
+  <div class="mx-auto max-w-7xl divide-y divide-gray-200 px-2 dark:divide-slate-700 sm:px-6 lg:px-8">
     <div class="flex h-16 items-center justify-between gap-2">
       <!-- Logo -->
       <a [routerLink]="RouteUrlEnum.HOME">
-        <img
-          ngSrc="/assets/logo-secundaria-cropped.png"
-          alt="Personal Cleaner"
-          height="64"
-          width="64"
-        />
+        <img ngSrc="/assets/logo-secundaria-cropped.png" alt="Personal Cleaner" height="64" width="64" />
       </a>
 
       <!-- Search Input -->
-      <input
-        type="search"
+      <input type="search"
         class="ms-1 w-80 min-w-0 flex-1 rounded-md border-gray-300 py-1.5 ps-10 dark:border-none dark:bg-slate-700 focus:dark:bg-white focus:dark:ring-0 sm:flex-none"
-        placeholder="Search"
-      />
+        placeholder="Search" />
 
       <!-- Mobile menu icon -->
-      <button
-        (click)="toggleMenu()"
-        aria-controls="mobile-menu"
-        aria-expanded="false"
-        data-deadlessui-state
-        class="flex h-10 w-10 flex-none flex-col items-center justify-around rounded-md px-1 py-3 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-gray-800 hover:dark:bg-slate-700 focus:dark:ring-white md:hidden"
-      >
-        <div
-          class="h-px w-5 rounded bg-gray-400 dark:bg-slate-300 hover:will-change-transform transform-gpu duration-300 transition-transform{{
+      <button (click)="toggleMenu()" aria-controls="mobile-menu" aria-expanded="false" data-deadlessui-state
+        class="flex h-10 w-10 flex-none flex-col items-center justify-around rounded-md px-1 py-3 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-gray-800 hover:dark:bg-slate-700 focus:dark:ring-white md:hidden">
+        <div class="h-px w-5 rounded bg-gray-400 dark:bg-slate-300 hover:will-change-transform transform-gpu duration-300 transition-transform{{
             menuOpen ? ' rotate-45 translate-y-[0.333rem]' : ''
-          }}"
-        ></div>
-        <div
-          class="h-px w-5 rounded bg-gray-400 dark:bg-slate-300 hover:will-change-transform transform-gpu ease-in transition-opacity{{
+          }}"></div>
+        <div class="h-px w-5 rounded bg-gray-400 dark:bg-slate-300 hover:will-change-transform transform-gpu ease-in transition-opacity{{
             menuOpen ? ' opacity-0' : ''
-          }}"
-        ></div>
-        <div
-          class="h-px w-5 rounded bg-gray-400 dark:bg-slate-300 hover:will-change-transform transform-gpu duration-300 transition-transform{{
+          }}"></div>
+        <div class="h-px w-5 rounded bg-gray-400 dark:bg-slate-300 hover:will-change-transform transform-gpu duration-300 transition-transform{{
             menuOpen ? ' -rotate-45 -translate-y-[0.333rem]' : ''
-          }}"
-        ></div>
+          }}"></div>
       </button>
 
       <!-- Desktop button -->
-      <a
-        [routerLink]="RouteUrlEnum.MESSAGE"
-        class="hidden flex-none transform-gpu rounded-md bg-indigo-600 px-3 py-2 text-sm font-medium text-white transition hover:scale-110 hover:shadow-2xl md:flex"
-      >
+      <a [routerLink]="RouteUrlEnum.MESSAGE"
+        class="hidden flex-none transform-gpu rounded-md bg-indigo-600 px-3 py-2 text-sm font-medium text-white transition hover:scale-110 hover:shadow-2xl md:flex">
         {{ RouteNameEnum.MESSAGE }}
       </a>
     </div>
@@ -59,40 +35,30 @@
     <!-- Desktop menu -->
     <nav class="hidden h-14 items-center justify-start gap-3 md:flex">
       @for (route of routes; track route.id) {
-        <a
-          routerLink="{{ route.path }}"
-          class="text-black dark:text-white px-3 text-sm font-medium h-full dark:h-auto border-b-2 dark:border-0 flex items-center dark:rounded-md dark:my-2 dark:py-2{{
+      <a routerLink="{{ route.path }}" class="text-black dark:text-white px-3 text-sm font-medium h-full dark:h-auto border-b-2 dark:border-0 flex items-center dark:rounded-md dark:my-2 dark:py-2{{
             route.active
               ? ' border-indigo-600 dark:bg-slate-900'
               : ' border-white hover:border-gray-300 hover:dark:bg-slate-700'
-          }}"
-          aria-current="page"
-        >
-          {{ route.name }}
-        </a>
+          }}" aria-current="page">
+        {{ route.name }}
+      </a>
       }
     </nav>
   </div>
 
   <!-- Mobile menu, show/hide based on menu state.  -->
-  <div
-    class="md:hidden transform-gpu transition-all origin-top{{
-      menuOpen ? ' h-48' : ' scale-0 h-0'
-    }}"
-    id="mobile-menu"
-  >
+  <div class="md:hidden transform-gpu origin-top-left transition-all {{
+      menuOpen ? 'h-24' : 'scale-0 h-0 opacity-0'
+    }}" id="mobile-menu">
     <nav class="space-y-1 px-0 pb-3 pt-2 dark:px-2 sm:dark:px-3">
       @for (route of routes; track route.id) {
-        <a
-          routerLink="{{ route.path }}"
-          class="h-full dark:h-auto border-s-4 dark:border-0 flex items-center dark:rounded-md ps-4 py-2 pe-3 text-gray-600 dark:text-slate-300{{
+      <a routerLink="{{ route.path }}" class="h-full dark:h-auto border-s-4 dark:border-0 flex items-center dark:rounded-md ps-4 py-2 pe-3 text-gray-600 dark:text-slate-300{{
             route.active
               ? ' border-indigo-600 text-indigo-600 dark:text-white bg-indigo-100 dark:bg-slate-900'
               : ' border-white hover:border-gray-400 hover:text-black hover:dark:text-white hover:bg-gray-200 hover:dark:bg-slate-700'
-          }}"
-        >
-          {{ route.name }}
-        </a>
+          }}">
+        {{ route.name }}
+      </a>
       }
     </nav>
   </div>
