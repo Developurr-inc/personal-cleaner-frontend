@@ -5,5 +5,5 @@ export enum RouteNameEnum {
   ABOUT_US = 'Sobre Nós',
   CTA = 'Chamadas para ação',
   EXPERTISE = 'Áreas de Atuação',
-  FAQ = 'Perguntas Comuns',
+  FAQS = 'Perguntas Comuns',
 }

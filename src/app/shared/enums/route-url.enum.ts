@@ -5,5 +5,5 @@ export enum RouteUrlEnum {
   ABOUT_US = 'about-us',
   CTA = 'cta',
   EXPERTISE = 'expertise-areas',
-  FAQ = 'faq',
+  FAQS = 'faqs',
 }

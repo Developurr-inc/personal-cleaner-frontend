@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-faq',
+  selector: 'app-faqs',
   standalone: true,
   imports: [],
-  templateUrl: './faq.component.html',
-  styleUrl: './faq.component.css'
+  templateUrl: './faqs.component.html',
+  styleUrl: './faqs.component.css'
 })
-export class FaqComponent {
+export class FaqsComponent {
   faqs: any = [
     {
       id: undefined,
@@ -35,15 +35,11 @@ export class FaqComponent {
     },
   ]
 
-  openDescription: boolean = false;
-
   constructor() {
     this.faqs.forEach((faq:any, index:number) => {
       faq.id = index;
     });
-    console.log(this.faqs)
   }
-
   toggleDescription(id:number) {
     this.faqs.forEach((faq:any) => {
       if (faq.id == id) {
@@ -53,4 +49,6 @@ export class FaqComponent {
       }
     })
   }
+
 }
+
