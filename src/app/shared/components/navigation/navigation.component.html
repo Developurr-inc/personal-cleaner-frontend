@@ -6,9 +6,9 @@
   >
     <div class="flex h-16 items-center justify-between gap-2">
       <!-- Logo -->
-      <a [routerLink]="homeRoute">
+      <a [routerLink]="RouteUrlEnum.HOME">
         <img
-          ngSrc="brand/logo-secundaria-cropped.png"
+          ngSrc="/assets/logo-secundaria-cropped.png"
           alt="Personal Cleaner"
           height="64"
           width="64"
@@ -49,10 +49,10 @@
 
       <!-- Desktop button -->
       <a
-        routerLink="/contact-us"
+        [routerLink]="RouteUrlEnum.MESSAGE"
         class="hidden flex-none transform-gpu rounded-md bg-indigo-600 px-3 py-2 text-sm font-medium text-white transition hover:scale-110 hover:shadow-2xl md:flex"
       >
-        Orçamento
+        {{ RouteNameEnum.MESSAGE }}
       </a>
     </div>
 
