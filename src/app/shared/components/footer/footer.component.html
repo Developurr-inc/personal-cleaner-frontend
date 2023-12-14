@@ -11,19 +11,36 @@
       width="48"
     />
 
-    <div class="flex w-40 flex-col gap-4">
-      <h2 class="mb-2 text-sm font-bold text-gray-900 dark:text-gray-100">
-        Navegação
-      </h2>
+    <div class="flex">
+      <div class="flex w-40 flex-col gap-4">
+        <h2 class="mb-2 text-sm font-bold text-gray-900 dark:text-gray-100">
+          Navegação
+        </h2>
 
-      @for (route of routes; track route.id) {
-        <a
-          class="text-sm text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white"
-          [routerLink]="route.path"
-        >
-          {{ route.name }}
-        </a>
-      }
+        @for (route of mainRoutes; track route.id) {
+          <a
+            class="text-sm text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white"
+            [routerLink]="route.path"
+          >
+            {{ route.name }}
+          </a>
+        }
+      </div>
+
+      <div class="flex w-40 flex-col gap-4">
+        <h2 class="mb-2 text-sm font-bold text-gray-900 dark:text-gray-100">
+          Ajuda
+        </h2>
+
+        @for (help of helpRoutes; track help.id) {
+          <a
+            class="text-sm text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white"
+            [routerLink]="help.path"
+          >
+            {{ help.name }}
+          </a>
+        }
+      </div>
     </div>
   </div>
 
