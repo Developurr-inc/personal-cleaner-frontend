@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { MAIN_ROUTES } from '../../consts/main-routes.const';
 import { SOCIAL_MEDIA_LINKS } from '../../consts/social-media-links.const';
 import { HELP_ROUTES } from '../../consts/help-routes.const';
+import { SERVICES } from '../../consts/services.const';
 
 @Component({
   selector: 'app-footer',
@@ -16,6 +17,7 @@ import { HELP_ROUTES } from '../../consts/help-routes.const';
 export class FooterComponent {
   mainRoutes = MAIN_ROUTES;
   helpRoutes = HELP_ROUTES;
+  serviceRoutes = SERVICES;
   socialMedias = SOCIAL_MEDIA_LINKS;
 
   year = new Date().getFullYear();
