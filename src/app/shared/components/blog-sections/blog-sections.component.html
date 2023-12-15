@@ -6,7 +6,7 @@
     </p>
   </div>
 
-  <div class="mb-10 grid grid-cols-1 gap-4 lg:grid-cols-4">
+  <div class="mb-10 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
     @for (service of services; track service.id) {
       <a
         class="h-96 transform-gpu rounded-2xl bg-cover transition-all hover:scale-105"
@@ -14,7 +14,7 @@
         href="{{ service.path }}"
       >
         <div
-          class="flex h-full w-full flex-col-reverse rounded-2xl bg-gradient-to-t from-gray-900 via-gray-900/40"
+          class="flex h-full w-full flex-col-reverse rounded-2xl bg-gradient-to-t from-black from-0% via-black/50 via-30% to-black/0 to-100%"
         >
           <h3 class="text-1xl px-4 pb-5 font-bold text-white">
             {{ service.title }}
