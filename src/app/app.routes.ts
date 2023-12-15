@@ -25,7 +25,7 @@ export const routes: Routes = [
   },
   {
     path: RouteUrlEnum.PRODUCTS,
-    component:ProductsComponent,
+    component: ProductsComponent,
     title: `Personal Cleaner - ${RouteNameEnum.PRODUCTS}`,
   },
   {
