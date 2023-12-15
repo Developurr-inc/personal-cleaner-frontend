@@ -7,7 +7,12 @@ import { SegmentComponent } from '../../shared/components/segment/segment.compon
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, SegmentComponent, HeroComponent, BlogSectionsComponent],
+  imports: [
+    CommonModule,
+    SegmentComponent,
+    HeroComponent,
+    BlogSectionsComponent,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })

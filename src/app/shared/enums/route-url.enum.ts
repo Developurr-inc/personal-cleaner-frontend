@@ -1,5 +1,5 @@
 export enum RouteUrlEnum {
   HOME = '',
-  APPOINTMENT = 'schedule-your-appointment',
-  FAQS = 'faqs',
+  MESSAGE = 'schedule-your-appointment',
+  FAQ = 'faqs',
 }

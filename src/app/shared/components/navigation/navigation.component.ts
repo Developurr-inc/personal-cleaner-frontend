@@ -15,41 +15,10 @@ import { RouteNameEnum } from '../../enums/route-name.enum';
   styleUrl: './navigation.component.css',
 })
 export class NavigationComponent {
-<<<<<<< HEAD
-  routes: RouteModel[] = [
-    {
-      id: undefined,
-      name: RouteNameEnum.HOME,
-      path: RouteUrlEnum.HOME,
-      active: false,
-    },
-    {
-      id: undefined,
-      name: RouteNameEnum.ABOUT_US,
-      path: RouteUrlEnum.ABOUT_US,
-      active: false,
-    },
-    {
-      id: undefined,
-      name: RouteNameEnum.CONTACT_US,
-      path: RouteUrlEnum.CONTACT_US,
-      active: false,
-    },
-    {
-      id: undefined,
-      name: RouteNameEnum.APPOINTMENT,
-      path: RouteUrlEnum.APPOINTMENT,
-      active: false,
-    },
-  ];
-  
-  homeRoute: string = RouteUrlEnum.HOME;
-=======
   protected readonly RouteUrlEnum = RouteUrlEnum;
   protected readonly RouteNameEnum = RouteNameEnum;
 
   routes: RouteModel[] = MAIN_ROUTES;
->>>>>>> 8fc05a3e16293ef89a06867f570b90d5b95d2af0
   menuOpen: boolean = false;
 
   constructor(private router: Router) {

@@ -13,14 +13,14 @@ export const routes: Routes = [
     title: `Personal Cleaner - ${RouteNameEnum.HOME}`,
   },
   {
-    path: RouteUrlEnum.FAQS,
-    component:FaqsComponent,
-    title: `Personal Cleaner - ${RouteNameEnum.FAQS}`
+    path: RouteUrlEnum.FAQ,
+    component: FaqsComponent,
+    title: `Personal Cleaner - ${RouteNameEnum.FAQ}`,
   },
   {
-    path: RouteUrlEnum.APPOINTMENT,
-    component:AppointmentComponent,
-    title: `Personal Cleaner - ${RouteNameEnum.APPOINTMENT}`
+    path: RouteUrlEnum.MESSAGE,
+    component: AppointmentComponent,
+    title: `Personal Cleaner - ${RouteNameEnum.MESSAGE}`,
   },
   {
     path: '**',
