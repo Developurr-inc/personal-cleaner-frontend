@@ -5,8 +5,8 @@ export const SEGMENTS: any[] = [
     subtitle: 'Subtitle',
     content: 'Start your journey with us',
     image:
-      'https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply',
-    color: 'bg-yellow-500',
+      '/assets/restaurante-fast-foods.jpg',
+    color: 'bg-orange-500',
   },
   {
     id: 2,
@@ -32,8 +32,8 @@ export const SEGMENTS: any[] = [
     subtitle: 'Subtitle',
     content: 'Start your journey with us',
     image:
-      'https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply',
-    color: 'bg-green-500',
+      '/assets/hospitais.jpg',
+    color: 'bg-emerald-500',
   },
   {
     id: 5,
@@ -41,8 +41,8 @@ export const SEGMENTS: any[] = [
     subtitle: 'Subtitle',
     content: 'Start your journey with us',
     image:
-      'https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply',
-    color: 'bg-red-500',
+      '/assets/industrias.jpg',
+    color: 'bg-yellow-500',
   },
   {
     id: 6,
@@ -50,8 +50,8 @@ export const SEGMENTS: any[] = [
     subtitle: 'Subtitle',
     content: 'Start your journey with us',
     image:
-      'https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply',
-    color: 'bg-purple-500',
+      '/assets/supermercados.jpg',
+    color: 'bg-lime-500',
   },
   {
     id: 7,
@@ -68,7 +68,7 @@ export const SEGMENTS: any[] = [
     subtitle: 'Subtitle',
     content: 'Start your journey with us',
     image:
-      'https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply',
-    color: 'bg-fuchsia-500',
+      '/assets/escolas.jpg',
+    color: 'bg-red-500',
   },
 ];
