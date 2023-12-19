@@ -23,8 +23,8 @@ export const SEGMENTS: any[] = [
     subtitle: 'Subtitle',
     content: 'Start your journey with us',
     image:
-      'https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply',
-    color: 'bg-indigo-500',
+      '/assets/hoteis.jpg',
+    color: 'bg-teal-500',
   },
   {
     id: 4,
@@ -59,8 +59,8 @@ export const SEGMENTS: any[] = [
     subtitle: 'Subtitle',
     content: 'Start your journey with us',
     image:
-      'https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply',
-    color: 'bg-pink-500',
+      '/assets/academias.jpg',
+    color: 'bg-purple-500',
   },
   {
     id: 8,
