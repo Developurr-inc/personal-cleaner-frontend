@@ -3,16 +3,14 @@ export const SERVICES = [
     id: 1,
     name: 'Assistência Técnica',
     path: '/',
-    image:
-      '/assets/assistencia-tecnica.jpg',
+    image: '/assets/assistencia-tecnica.jpg',
     title: 'Assistência Técnica',
   },
   {
     id: 2,
     name: 'Treinamento',
     path: '/',
-    image:
-      '/assets/treinamento.jpg',
+    image: '/assets/treinamento.jpg',
     title: 'Treinamento',
   },
   {
@@ -27,8 +25,7 @@ export const SERVICES = [
     id: 4,
     name: 'Produtos',
     path: '/',
-    image:
-      '/assets/produtos.jpg',
+    image: '/assets/produtos.jpg',
     title: 'Produtos',
   },
 ];
