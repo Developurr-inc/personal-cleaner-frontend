@@ -13,7 +13,7 @@ export const SEGMENTS: any[] = [
     subtitle: 'Subtitle',
     content: 'Start your journey with us',
     image: '/assets/concessionaria-de-comidas.jpg',
-    color: 'bg-blue-500',
+    color: 'bg-green-400',
   },
   {
     id: 3,
