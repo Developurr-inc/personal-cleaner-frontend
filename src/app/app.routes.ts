@@ -5,6 +5,7 @@ import { FaqsComponent } from './pages/faqs/faqs.component';
 import { RouteUrlEnum } from './shared/enums/route-url.enum';
 import { RouteNameEnum } from './shared/enums/route-name.enum';
 import { AppointmentComponent } from './pages/appointment/appointment.component';
+import { NotfoundComponent } from './pages/notfound/notfound.component';
 
 export const routes: Routes = [
   {
@@ -24,7 +25,8 @@ export const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '',
+    component: NotfoundComponent,
+    title: `Personal Cleaner - Nao encontrado`,
     pathMatch: 'full',
   },
 ];

@@ -4,6 +4,7 @@ import { BlogSectionsComponent } from '../../shared/components/blog-sections/blo
 import { HeroComponent } from '../../shared/components/hero/hero.component';
 import { SegmentComponent } from '../../shared/components/segment/segment.component';
 import { ContentComponent } from '../../shared/components/content/content.component';
+import { NotfoundComponent } from '../notfound/notfound.component';
 
 @Component({
   selector: 'app-home',
@@ -13,6 +14,7 @@ import { ContentComponent } from '../../shared/components/content/content.compon
     SegmentComponent,
     HeroComponent,
     BlogSectionsComponent,
+    NotfoundComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',

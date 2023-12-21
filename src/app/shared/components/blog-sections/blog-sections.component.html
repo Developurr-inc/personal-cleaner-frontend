@@ -9,7 +9,7 @@
   <div class="mb-10 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
     @for (service of services; track service.id) {
       <a
-        class="h-96 transform-gpu rounded-2xl bg-cover transition-all hover:scale-105"
+        class="h-96 transform-gpu rounded-2xl bg-cover bg-center transition-all hover:scale-105"
         style="background-image: url({{ service.image }})"
         href="{{ service.path }}"
       >
