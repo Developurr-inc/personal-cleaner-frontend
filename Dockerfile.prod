@@ -15,15 +15,15 @@ RUN npm i -g @angular/cli && \
     npm run build
 
 # Runner stage
-FROM oven/bun:alpine AS runner
+FROM node:${NODE_VERSION}-alpine AS runner
 
 # Use production node environment by default.
 ENV NODE_ENV production
 
-WORKDIR /usr/src/app
+WORKDIR /home/node
 
 # Run the application as a non-root user.
-USER bun
+USER node
 
 # Copy the built application from the builder stage
 COPY --from=builder /usr/src/app/dist/personal-cleaner-frontend ./
@@ -32,4 +32,4 @@ COPY --from=builder /usr/src/app/dist/personal-cleaner-frontend ./
 EXPOSE 4000
 
 # Run the application.
-CMD bun run server/server.mjs
+CMD node server/server.mjs
