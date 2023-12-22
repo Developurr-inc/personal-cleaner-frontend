@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BlogSectionsComponent } from '../../shared/components/blog-sections/blog-sections.component';
 import { HeroComponent } from '../../shared/components/hero/hero.component';
 import { SegmentComponent } from '../../shared/components/segment/segment.component';
+import { ContentComponent } from '../../shared/components/content/content.component';
 import { NotfoundComponent } from '../notfound/notfound.component';
 
 @Component({
