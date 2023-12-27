@@ -3,4 +3,5 @@ export enum RouteNameEnum {
   MESSAGE = 'Agendamento',
   FAQ = 'FAQ',
   PRODUCTS = 'PRODUCTS',
+  CHEMICALS = 'CHEMICALS',
 }
