@@ -1,4 +1,6 @@
-export const SOCIAL_MEDIA_LINKS: any[] = [
+import {SocialMediaLinkModel} from "../models/social-media-link.model";
+
+export const SOCIAL_MEDIA_LINKS: SocialMediaLinkModel[] = [
   {
     id: 1,
     color: '#206597',

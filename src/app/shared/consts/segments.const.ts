@@ -1,4 +1,6 @@
-export const SEGMENTS: any[] = [
+import {SegmentModel} from "../models/segment.model";
+
+export const SEGMENTS: SegmentModel[] = [
   {
     id: 1,
     title: 'Restaurantes Comerciais e Fast Foods',
