@@ -1,4 +1,6 @@
-export const SERVICES = [
+import { ServiceModel } from '../models/service.model';
+
+export const SERVICES: ServiceModel[] = [
   {
     id: 1,
     name: 'Assistência Técnica',

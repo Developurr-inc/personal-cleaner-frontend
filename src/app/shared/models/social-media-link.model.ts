@@ -1,6 +1,6 @@
-export type RouteModel = {
+export type SocialMediaLinkModel = {
   id: number;
   color: string;
   link: string;
-  icon: boolean;
+  icon: string;
 };
