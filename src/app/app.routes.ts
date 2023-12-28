@@ -8,6 +8,8 @@ import { AppointmentComponent } from './pages/appointment/appointment.component'
 import { ProductsComponent } from './pages/products/products.component';
 import { ChemicalsComponent } from './pages/chemicals/chemicals.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { TrainingComponent } from './pages/training/training.component';
+import { EquipmentsComponent } from './pages/equipments/equipments.component';
 
 export const routes: Routes = [
   {
@@ -34,6 +36,16 @@ export const routes: Routes = [
     path: RouteUrlEnum.CHEMICALS,
     component: ChemicalsComponent,
     title: `Personal Cleaner - ${RouteNameEnum.CHEMICALS}`,
+  },
+  {
+    path: RouteUrlEnum.TRAINING,
+    component: TrainingComponent,
+    title: `Personal Cleaner - ${RouteNameEnum.TRAINING}`
+  },
+  {
+    path: RouteUrlEnum.EQUIPMENTS,
+    component: EquipmentsComponent,
+    title: `Personal Cleaner - ${RouteNameEnum.EQUIPMENTS}`
   },
   {
     path: '**',
