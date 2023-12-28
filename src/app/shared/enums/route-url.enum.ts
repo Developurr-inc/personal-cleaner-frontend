@@ -2,8 +2,8 @@ export enum RouteUrlEnum {
   HOME = '',
   MESSAGE = 'schedule-your-appointment',
   FAQ = 'faqs',
-  PRODUCTS = 'products',
-  CHEMICALS = 'chemicals',
+  TECHNICAL_ASSISTANCE = 'service/technical-assistance',
   TRAINING = 'service/training',
   EQUIPMENTS = 'service/equipments',
+  PRODUCTS = 'service/products',
 }
