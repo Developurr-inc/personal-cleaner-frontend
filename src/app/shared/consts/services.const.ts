@@ -1,12 +1,14 @@
 import { ServiceModel } from '../models/service.model';
+import { RouteUrlEnum } from '../enums/route-url.enum';
+import { RouteNameEnum } from '../enums/route-name.enum';
 
 export const SERVICES: ServiceModel[] = [
   {
     id: 1,
     name: 'Assistência Técnica',
-    path: '/',
+    path: RouteUrlEnum.TECHNICAL_ASSISTANCE,
     image: '/assets/assistencia-tecnica.jpg',
-    title: 'Assistência Técnica',
+    title: RouteNameEnum.TECHNICAL_ASSISTANCE,
   },
   {
     id: 2,
@@ -26,7 +28,7 @@ export const SERVICES: ServiceModel[] = [
   {
     id: 4,
     name: 'Produtos',
-    path: '/',
+    path: '/service/products',
     image: '/assets/produtos.jpg',
     title: 'Produtos',
   },

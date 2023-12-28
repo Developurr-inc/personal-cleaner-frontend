@@ -6,8 +6,8 @@ import { RouteUrlEnum } from './shared/enums/route-url.enum';
 import { RouteNameEnum } from './shared/enums/route-name.enum';
 import { AppointmentComponent } from './pages/appointment/appointment.component';
 import { ProductsComponent } from './pages/products/products.component';
-import { ChemicalsComponent } from './pages/chemicals/chemicals.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { TechnicalAssistanceComponent } from './pages/technical-assistance/technical-assistance.component';
 
 export const routes: Routes = [
   {
@@ -31,9 +31,9 @@ export const routes: Routes = [
     title: `Personal Cleaner - ${RouteNameEnum.PRODUCTS}`,
   },
   {
-    path: RouteUrlEnum.CHEMICALS,
-    component: ChemicalsComponent,
-    title: `Personal Cleaner - ${RouteNameEnum.CHEMICALS}`,
+    path: RouteUrlEnum.TECHNICAL_ASSISTANCE,
+    component: TechnicalAssistanceComponent,
+    title: `Personal Cleaner - ${RouteNameEnum.TECHNICAL_ASSISTANCE}`,
   },
   {
     path: '**',
