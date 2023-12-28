@@ -1,74 +1,76 @@
-export const SEGMENTS: any[] = [
+import {SegmentModel} from "../models/segment.model";
+
+export const SEGMENTS: SegmentModel[] = [
   {
     id: 1,
     title: 'Restaurantes Comerciais e Fast Foods',
     subtitle: 'Subtitle',
-    content: 'Start your journey with us',
-    image:
-      'https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply',
-    color: 'bg-yellow-500',
+    content: 'Oferecemos soluções customizadas para o tamanho de seu negócio. Linha completa de produtos, equipamentos e material de apoio para garantir o mais elevado padrão de higiene para seu estabelecimento.',
+    image: '/assets/restaurante-fast-foods.jpg',
+    color: 'bg-orange-500',
   },
   {
     id: 2,
-    title: 'Concessionaria de Alimentação',
+    title: 'Concessionária de Alimentação',
     subtitle: 'Subtitle',
-    content: 'Start your journey with us',
-    image:
-      'https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply',
-    color: 'bg-blue-500',
+    content: 'Oferecemos uma linha completa de produtos, equipamentos e material de apoio que garantem o melhor resultado ao menor custo possível.',
+    image: '/assets/concessionaria-de-comidas.jpg',
+    color: 'bg-green-400',
   },
   {
     id: 3,
     title: 'Hotéis e Pousadas',
     subtitle: 'Subtitle',
-    content: 'Start your journey with us',
-    image:
-      'https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply',
-    color: 'bg-indigo-500',
+    content: 'Oferecemos soluções customizadas para limpeza e higienização de todas as áreas de seu estabelecimento.',
+    image: '/assets/hoteis.jpg',
+    color: 'bg-teal-500',
   },
   {
     id: 4,
     title: 'Hospitais, Clinicas e Laboratórios',
     subtitle: 'Subtitle',
-    content: 'Start your journey with us',
-    image:
-      'https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply',
-    color: 'bg-green-500',
+    content: 'Oferecemos soluções customizadas para as mais rigorosas exigências de Higiene e limpeza em um ambiente hospitalar.',
+    image: '/assets/hospitais.jpg',
+    color: 'bg-emerald-500',
   },
   {
     id: 5,
-    title: 'Indústrias',
+    title: 'Escolas',
     subtitle: 'Subtitle',
-    content: 'Start your journey with us',
-    image:
-      'https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply',
+    content: 'Oferecemos produtos e equipamentos de alta performance para assegurar o mais alto padrão de limpeza e higienização de seu estabelecimento.',
+    image: '/assets/escolas.jpg',
     color: 'bg-red-500',
   },
   {
     id: 6,
-    title: 'Supermercados',
+    title: 'Indústrias',
     subtitle: 'Subtitle',
-    content: 'Start your journey with us',
-    image:
-      'https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply',
-    color: 'bg-purple-500',
+    content: 'Oferecemos uma linha completa de produtos de alta performance customizada para o seu tamanho e tipo de indústria. ',
+    image: '/assets/industrias.jpg',
+    color: 'bg-yellow-500',
   },
   {
     id: 7,
-    title: 'Clubes e Academias',
+    title: 'Supermercados',
     subtitle: 'Subtitle',
-    content: 'Start your journey with us',
-    image:
-      'https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply',
-    color: 'bg-pink-500',
+    content: 'Oferecemos um programa de Higiene e Limpeza customizado que garante o mais alto padrão de higiene e limpeza para seu estabelecimento.',
+    image: '/assets/supermercados.jpg',
+    color: 'bg-lime-500',
   },
   {
     id: 8,
-    title: 'Escolas e Edifícios Comerciais',
+    title: 'Clubes e Academias',
     subtitle: 'Subtitle',
-    content: 'Start your journey with us',
-    image:
-      'https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply',
-    color: 'bg-fuchsia-500',
+    content: 'Oferecemos produtos e equipamentos de alta performance que garantem a correta limpeza e higienização com foco na otimização de custos.',
+    image: '/assets/academias.jpg',
+    color: 'bg-purple-500',
   },
+  {
+    id: 9,
+    title: 'Edifícios Comerciais',
+    subtitle: 'Subtitle',
+    content: 'Oferecemos uma linha completa de produtos, equipamentos e dispensers para garantir um ambiente limpo e higienizado para seus colaboradores e clientes que visam a otimização de custos.',
+    image: '/assets/edificios-comerciais.jpg',
+    color: 'bg-red-500',
+  }
 ];
