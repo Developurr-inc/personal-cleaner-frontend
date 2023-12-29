@@ -21,8 +21,7 @@ export const SERVICES: ServiceModel[] = [
     id: 3,
     name: 'Equipamentos',
     path: '/',
-    image:
-      '/assets/equipments.jpg',
+    image: '/assets/equipments.jpg',
     title: 'Equipamentos',
   },
   {
