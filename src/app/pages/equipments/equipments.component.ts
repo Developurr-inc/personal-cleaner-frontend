@@ -7,8 +7,6 @@ import { StatsComponent } from '../../shared/components/stats/stats.component';
   standalone: true,
   imports: [ContentComponent, StatsComponent],
   templateUrl: './equipments.component.html',
-  styleUrl: './equipments.component.css'
+  styleUrl: './equipments.component.css',
 })
-export class EquipmentsComponent {
-
-}
+export class EquipmentsComponent {}

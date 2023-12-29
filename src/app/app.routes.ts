@@ -40,12 +40,12 @@ export const routes: Routes = [
   {
     path: RouteUrlEnum.TRAINING,
     component: TrainingComponent,
-    title: `Personal Cleaner - ${RouteNameEnum.TRAINING}`
+    title: `Personal Cleaner - ${RouteNameEnum.TRAINING}`,
   },
   {
     path: RouteUrlEnum.EQUIPMENTS,
     component: EquipmentsComponent,
-    title: `Personal Cleaner - ${RouteNameEnum.EQUIPMENTS}`
+    title: `Personal Cleaner - ${RouteNameEnum.EQUIPMENTS}`,
   },
   {
     path: '**',
