@@ -6,7 +6,7 @@ import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 
 const scrollConfig: InMemoryScrollingOptions = {
-  scrollPositionRestoration: 'top',
+  scrollPositionRestoration: 'enabled',
   anchorScrolling: 'enabled',
 };
 
