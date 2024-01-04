@@ -7,7 +7,7 @@ export const SEGMENTS: SegmentModel[] = [
     subtitle: 'Subtitle',
     content:
       'Oferecemos soluções customizadas para o tamanho de seu negócio. Linha completa de produtos, equipamentos e material de apoio para garantir o mais elevado padrão de higiene para seu estabelecimento.',
-    image: '/assets/restaurante-fast-foods.jpg',
+    image: '/assets/restaurante-fast-foods.webp',
     color: 'bg-orange-500',
   },
   {
@@ -16,7 +16,7 @@ export const SEGMENTS: SegmentModel[] = [
     subtitle: 'Subtitle',
     content:
       'Oferecemos uma linha completa de produtos, equipamentos e material de apoio que garantem o melhor resultado ao menor custo possível.',
-    image: '/assets/concessionaria-de-comidas.jpg',
+    image: '/assets/concessionaria-de-comidas.webp',
     color: 'bg-green-400',
   },
   {
@@ -25,7 +25,7 @@ export const SEGMENTS: SegmentModel[] = [
     subtitle: 'Subtitle',
     content:
       'Oferecemos soluções customizadas para limpeza e higienização de todas as áreas de seu estabelecimento.',
-    image: '/assets/hoteis.jpg',
+    image: '/assets/hoteis.webp',
     color: 'bg-teal-500',
   },
   {
@@ -34,7 +34,7 @@ export const SEGMENTS: SegmentModel[] = [
     subtitle: 'Subtitle',
     content:
       'Oferecemos soluções customizadas para as mais rigorosas exigências de Higiene e limpeza em um ambiente hospitalar.',
-    image: '/assets/hospitais.jpg',
+    image: '/assets/hospitais.webp',
     color: 'bg-emerald-500',
   },
   {
@@ -43,7 +43,7 @@ export const SEGMENTS: SegmentModel[] = [
     subtitle: 'Subtitle',
     content:
       'Oferecemos produtos e equipamentos de alta performance para assegurar o mais alto padrão de limpeza e higienização de seu estabelecimento.',
-    image: '/assets/escolas.jpg',
+    image: '/assets/escolas.webp',
     color: 'bg-red-500',
   },
   {
@@ -52,7 +52,7 @@ export const SEGMENTS: SegmentModel[] = [
     subtitle: 'Subtitle',
     content:
       'Oferecemos uma linha completa de produtos de alta performance customizada para o seu tamanho e tipo de indústria. ',
-    image: '/assets/industrias.jpg',
+    image: '/assets/industrias.webp',
     color: 'bg-yellow-500',
   },
   {
@@ -61,7 +61,7 @@ export const SEGMENTS: SegmentModel[] = [
     subtitle: 'Subtitle',
     content:
       'Oferecemos um programa de Higiene e Limpeza customizado que garante o mais alto padrão de higiene e limpeza para seu estabelecimento.',
-    image: '/assets/supermercados.jpg',
+    image: '/assets/supermercados.webp',
     color: 'bg-lime-500',
   },
   {
@@ -70,7 +70,7 @@ export const SEGMENTS: SegmentModel[] = [
     subtitle: 'Subtitle',
     content:
       'Oferecemos produtos e equipamentos de alta performance que garantem a correta limpeza e higienização com foco na otimização de custos.',
-    image: '/assets/academias.jpg',
+    image: '/assets/academias.webp',
     color: 'bg-purple-500',
   },
   {
@@ -79,7 +79,7 @@ export const SEGMENTS: SegmentModel[] = [
     subtitle: 'Subtitle',
     content:
       'Oferecemos uma linha completa de produtos, equipamentos e dispensers para garantir um ambiente limpo e higienizado para seus colaboradores e clientes que visam a otimização de custos.',
-    image: '/assets/edificios-comerciais.jpg',
+    image: '/assets/edificios-comerciais.webp',
     color: 'bg-red-500',
   },
 ];
