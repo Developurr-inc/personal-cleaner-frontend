@@ -14,7 +14,7 @@ export const SERVICES: ServiceModel[] = [
     id: 2,
     name: 'Treinamento',
     path: '/',
-    image: '/assets/treinamento.jpg',
+    image: '/assets/treinamen.webp',
     title: 'Treinamento',
   },
   {
@@ -28,7 +28,7 @@ export const SERVICES: ServiceModel[] = [
     id: 4,
     name: 'Produtos',
     path: '/service/products',
-    image: '/assets/produtos.jpg',
+    image: '/assets/produtos.webp',
     title: 'Produtos',
   },
 ];
