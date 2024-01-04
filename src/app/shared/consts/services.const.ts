@@ -7,7 +7,7 @@ export const SERVICES: ServiceModel[] = [
     id: 1,
     name: 'Assistência Técnica',
     path: RouteUrlEnum.TECHNICAL_ASSISTANCE,
-    image: '/assets/assistencia-tecnica.jpg',
+    image: '/assets/assistencia-tecnica.webp',
     title: RouteNameEnum.TECHNICAL_ASSISTANCE,
   },
   {
@@ -21,7 +21,7 @@ export const SERVICES: ServiceModel[] = [
     id: 3,
     name: 'Equipamentos',
     path: '/',
-    image: '/assets/equipments.jpg',
+    image: '/assets/equipamentos.webp',
     title: 'Equipamentos',
   },
   {

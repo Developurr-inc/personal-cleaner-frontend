@@ -16,7 +16,7 @@ export const SEGMENTS: SegmentModel[] = [
     subtitle: 'Subtitle',
     content:
       'Oferecemos uma linha completa de produtos, equipamentos e material de apoio que garantem o melhor resultado ao menor custo possível.',
-    image: '/assets/concessionaria-de-comidas.jpg',
+    image: '/assets/concessionaria-de-comidas.webp',
     color: 'bg-green-400',
   },
   {
@@ -43,7 +43,7 @@ export const SEGMENTS: SegmentModel[] = [
     subtitle: 'Subtitle',
     content:
       'Oferecemos produtos e equipamentos de alta performance para assegurar o mais alto padrão de limpeza e higienização de seu estabelecimento.',
-    image: '/assets/escolas.jpg',
+    image: '/assets/escolas.webp',
     color: 'bg-red-500',
   },
   {
@@ -70,7 +70,7 @@ export const SEGMENTS: SegmentModel[] = [
     subtitle: 'Subtitle',
     content:
       'Oferecemos produtos e equipamentos de alta performance que garantem a correta limpeza e higienização com foco na otimização de custos.',
-    image: '/assets/academias.jpg',
+    image: '/assets/academias.webp',
     color: 'bg-purple-500',
   },
   {
@@ -79,7 +79,7 @@ export const SEGMENTS: SegmentModel[] = [
     subtitle: 'Subtitle',
     content:
       'Oferecemos uma linha completa de produtos, equipamentos e dispensers para garantir um ambiente limpo e higienizado para seus colaboradores e clientes que visam a otimização de custos.',
-    image: '/assets/edificios-comerciais.jpg',
+    image: '/assets/edificios-comerciais.webp',
     color: 'bg-red-500',
   },
 ];
