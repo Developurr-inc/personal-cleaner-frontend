@@ -5,10 +5,7 @@ import { SupportProductsComponent } from '../../shared/components/support-produc
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [
-    PapersProductsComponent,
-    SupportProductsComponent,
-  ],
+  imports: [PapersProductsComponent, SupportProductsComponent],
   templateUrl: './products.component.html',
   styleUrl: './products.component.css',
 })

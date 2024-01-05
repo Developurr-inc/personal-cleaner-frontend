@@ -6,7 +6,7 @@ import { PAPERS_PRODUCTS } from '../../consts/paper-products.const';
   standalone: true,
   imports: [],
   templateUrl: './papers-products.component.html',
-  styleUrl: './papers-products.component.css'
+  styleUrl: './papers-products.component.css',
 })
 export class PapersProductsComponent {
   papers = PAPERS_PRODUCTS;
