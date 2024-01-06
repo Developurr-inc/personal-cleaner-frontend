@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
-import { CommonModule, NgOptimizedImage } from '@angular/common';
+import {
+  CommonModule,
+  IMAGE_LOADER,
+  ImageLoaderConfig,
+  NgOptimizedImage,
+} from '@angular/common';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { NavigationComponent } from './shared/components/navigation/navigation.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
@@ -18,5 +23,25 @@ import { FooterComponent } from './shared/components/footer/footer.component';
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
+  providers: [
+    {
+      provide: IMAGE_LOADER,
+      useValue: (config: ImageLoaderConfig) => {
+        let url = `http://localhost:4200`;
+
+        if (!config.src.endsWith('.webp')) {
+          return url + config.src;
+        }
+
+        let image = config.src.split('.webp')[0];
+
+        if (config.width) {
+          image += `-${config.width}px`;
+        }
+
+        return url + image + '.webp';
+      },
+    },
+  ],
 })
 export class AppComponent {}
