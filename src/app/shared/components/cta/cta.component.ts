@@ -12,7 +12,7 @@ import { RouterModule } from '@angular/router';
 export class CtaComponent {
   @Input({ required: true }) title!: string;
   @Input({ required: true }) content!: string;
-  @Input({ required: true }) image!: string;
+  @Input({ required: true }) image: string = 'image';
   @Input() subtitle: string | null = null;
   @Input() color: string = 'text-indigo-600';
 }
