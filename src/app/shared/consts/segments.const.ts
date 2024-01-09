@@ -21,7 +21,7 @@ export const SEGMENTS: SegmentModel[] = [
   },
   {
     id: 3,
-    title: 'Hotéis e Pousadas',
+    title: 'Hotéis, Motéis e Pousadas',
     subtitle: 'Subtitle',
     content:
       'Oferecemos soluções customizadas para limpeza e higienização de todas as áreas de seu estabelecimento.',
