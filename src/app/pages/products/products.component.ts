@@ -27,12 +27,16 @@ export class ProductsComponent {
       productContent?.classList.remove('hidden');
       chemicalsContent?.classList.add('hidden');
       btnProducts?.classList.add('bg-indigo-600');
+      btnProducts?.classList.add('text-neutral-50');
       btnChemicals?.classList.remove('bg-indigo-600');
+      btnChemicals?.classList.remove('text-neutral-50');
     } else {
       productContent?.classList.add('hidden');
       chemicalsContent?.classList.remove('hidden');
       btnProducts?.classList.remove('bg-indigo-600');
+      btnProducts?.classList.remove('text-neutral-50');
       btnChemicals?.classList.add('bg-indigo-600');
+      btnChemicals?.classList.add('text-neutral-50');
     }
   }
 }
