@@ -3,7 +3,7 @@ import { SegmentModel } from '../models/segment.model';
 export const SEGMENTS: SegmentModel[] = [
   {
     id: 1,
-    title: 'Restaurantes Comerciais e Fast Foods',
+    title: 'Restaurantes Comerciais',
     subtitle: 'Subtitle',
     content:
       'Oferecemos soluções customizadas para o tamanho de seu negócio. Linha completa de produtos, equipamentos e material de apoio para garantir o mais elevado padrão de higiene para seu estabelecimento.',
@@ -12,7 +12,7 @@ export const SEGMENTS: SegmentModel[] = [
   },
   {
     id: 2,
-    title: 'Concessionária de Alimentação',
+    title: 'Empresas de Alimentação',
     subtitle: 'Subtitle',
     content:
       'Oferecemos uma linha completa de produtos, equipamentos e material de apoio que garantem o melhor resultado ao menor custo possível.',
@@ -21,7 +21,7 @@ export const SEGMENTS: SegmentModel[] = [
   },
   {
     id: 3,
-    title: 'Hotéis e Pousadas',
+    title: 'Hotéis, Motéis e Pousadas',
     subtitle: 'Subtitle',
     content:
       'Oferecemos soluções customizadas para limpeza e higienização de todas as áreas de seu estabelecimento.',
@@ -30,7 +30,7 @@ export const SEGMENTS: SegmentModel[] = [
   },
   {
     id: 4,
-    title: 'Hospitais, Clinicas e Laboratórios',
+    title: 'Hospitais, Clínicas e Laboratórios',
     subtitle: 'Subtitle',
     content:
       'Oferecemos soluções customizadas para as mais rigorosas exigências de Higiene e limpeza em um ambiente hospitalar.',
@@ -75,7 +75,7 @@ export const SEGMENTS: SegmentModel[] = [
   },
   {
     id: 9,
-    title: 'Edifícios Comerciais',
+    title: 'Escritórios Corporativos',
     subtitle: 'Subtitle',
     content:
       'Oferecemos uma linha completa de produtos, equipamentos e dispensers para garantir um ambiente limpo e higienizado para seus colaboradores e clientes que visam a otimização de custos.',
