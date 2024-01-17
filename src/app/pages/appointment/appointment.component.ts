@@ -6,8 +6,8 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './appointment.component.html',
-  styleUrl: './appointment.component.css'
+  styleUrl: './appointment.component.css',
 })
 export class AppointmentComponent {
-
+  pageTitle: string = 'Agendamento';
 }

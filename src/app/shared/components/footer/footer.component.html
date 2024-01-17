@@ -1,0 +1,98 @@
+<footer
+  class="mx-auto max-w-7xl divide-y divide-gray-200 px-4 sm:px-6 lg:px-8 dark:divide-slate-700"
+>
+  <!--  primeira parte  -->
+  <div class="flex flex-col justify-between py-16 sm:flex-row">
+    <img
+      class="h-12 w-12 dark:text-white"
+      ngSrcset="256w"
+      ngSrc="/assets/logo-principal.webp"
+      alt="Personal Cleaner Logo"
+      height="48"
+      width="48"
+    />
+
+    <div class="flex-wrap sm:flex">
+      <div class="m-8 ms-0 flex w-40 flex-col gap-4 sm:m-0">
+        <h2 class="mb-2 text-sm font-bold text-gray-900 dark:text-gray-100">
+          Navegação
+        </h2>
+
+        @for (route of mainRoutes; track route.id) {
+          <a
+            class="text-sm text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white"
+            [routerLink]="route.path"
+          >
+            {{ route.name }}
+          </a>
+        }
+      </div>
+
+      <div class="m-8 ms-0 flex w-40 flex-col gap-4 sm:m-0">
+        <h2 class="mb-2 text-sm font-bold text-gray-900 dark:text-gray-100">
+          Serviços
+        </h2>
+
+        @for (service of serviceRoutes; track service.id) {
+          <a
+            class="text-sm text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white"
+            [routerLink]="service.path"
+          >
+            {{ service.name }}
+          </a>
+        }
+      </div>
+
+      <div class="m-8 ms-0 flex w-40 flex-col gap-4 sm:m-0">
+        <h2 class="mb-2 text-sm font-bold text-gray-900 dark:text-gray-100">
+          Ajuda
+        </h2>
+
+        @for (help of helpRoutes; track help.id) {
+          <a
+            class="text-sm text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white"
+            [routerLink]="help.path"
+          >
+            {{ help.name }}
+          </a>
+        }
+      </div>
+    </div>
+  </div>
+
+  <!--  segunda parte  -->
+  <div
+    class="flex flex-col flex-wrap items-stretch justify-between gap-6 py-8 md:flex-row-reverse md:items-center"
+  >
+    <div class="flex flex-wrap items-center justify-start gap-2">
+      @for (socialMedia of socialMedias; track socialMedia.id) {
+        <a [href]="socialMedia.link" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 hover:fill-[{{ socialMedia.color }}] fill-gray-600"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+            />
+          </svg>
+        </a>
+      }
+    </div>
+
+    <div>
+      <p class="text-xs text-gray-600">
+        Copyright © {{ year }} Personal Cleaner. Todos os direitos reservados.
+      </p>
+      <p class="text-gray-600">
+        <a
+          class="text-xs"
+          href="https://compras.dados.gov.br/fornecedores/doc/fornecedor_pj/06271327000184"
+          target="_blank"
+        >
+          CNPJ: <span class="text-xs">06.271.327/0001-84</span>
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>

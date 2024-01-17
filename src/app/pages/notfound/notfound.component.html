@@ -1,0 +1,14 @@
+<section
+  class="flex h-screen w-screen flex-col items-center space-y-10 bg-cover bg-center px-6 pt-28 text-center text-white"
+  style="background-image: url('/assets/not-found.webp')"
+>
+  <h3 class="text-xl font-bold md:text-2xl">404</h3>
+  <h2 class="text-3xl font-bold md:text-6xl">Página não encontrada</h2>
+  <p class="">Desculpe, não encontramos a página que está procurando</p>
+  <a
+    [routerLink]="RouteUrlEnum.HOME"
+    class="w-30 h-10 rounded-md bg-indigo-600 px-4 py-3 text-sm text-white hover:bg-indigo-500 dark:bg-gray-800 dark:hover:bg-gray-700"
+  >
+    Voltar ao início
+  </a>
+</section>
