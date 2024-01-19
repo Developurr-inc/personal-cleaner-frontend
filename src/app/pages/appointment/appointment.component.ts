@@ -6,7 +6,7 @@ import { FooterComponent } from '../../shared/components/footer/footer.component
 @Component({
   selector: 'app-appointment',
   standalone: true,
-  imports: [CommonModule, NavigationComponent,FooterComponent],
+  imports: [CommonModule, NavigationComponent, FooterComponent],
   templateUrl: './appointment.component.html',
   styleUrl: './appointment.component.css',
 })
