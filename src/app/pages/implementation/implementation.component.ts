@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
-import { StepByStepComponent } from '../../shared/components/step-by-step/step-by-step.component'
+import { StepByStepComponent } from '../../shared/components/step-by-step/step-by-step.component';
+import { IMPLEMENTATION_STEP } from '../../shared/consts/implementation-step.const';
 
 
 @Component({
@@ -13,5 +14,5 @@ import { StepByStepComponent } from '../../shared/components/step-by-step/step-b
   styleUrl: './implementation.component.css'
 })
 export class ImplementationComponent {
-
+  arraySteps = IMPLEMENTATION_STEP;
 }

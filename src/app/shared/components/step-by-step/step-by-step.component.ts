@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ImplementaionStepModel } from '../../models/implementation-step.module';
 
 @Component({
   selector: 'app-step-by-step',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './step-by-step.component.css'
 })
 export class StepByStepComponent {
-
+  @Input ({required:true}) content: ImplementaionStepModel | any;
 }
