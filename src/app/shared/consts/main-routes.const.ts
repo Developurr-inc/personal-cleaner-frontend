@@ -9,10 +9,4 @@ export const MAIN_ROUTES: RouteModel[] = [
     path: RouteUrlEnum.HOME,
     active: false,
   },
-  {
-    id: 2,
-    name: RouteNameEnum.MESSAGE,
-    path: RouteUrlEnum.MESSAGE,
-    active: false,
-  },
 ];
