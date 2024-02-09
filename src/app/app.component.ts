@@ -8,6 +8,7 @@ import {
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { NavigationComponent } from './shared/components/navigation/navigation.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
+import {  } from '@angular/core'
 
 @Component({
   selector: 'app-root',
