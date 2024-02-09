@@ -27,11 +27,11 @@ export const IMPLEMENTATION_STEP: ImplementaionStepModel[] = [
   },
 
   {
-    id: 1,
+    id: 2,
     title: '2 - FIRMAR PARCERIA',
     section:[
       {
-        id:2,
+        id:1,
         subtitle:'Para vencer seus maiores desafios',
         items:[
           {
@@ -48,11 +48,11 @@ export const IMPLEMENTATION_STEP: ImplementaionStepModel[] = [
   },
 
   {
-    id:1,
+    id:3,
     title: '3 - IMPLEMENTAR',
     section:[
       {
-        id:3,
+        id:1,
         subtitle:'Programa de higienização',
         items:[
           {
@@ -69,11 +69,11 @@ export const IMPLEMENTATION_STEP: ImplementaionStepModel[] = [
   },
 
   {
-    id:1,
+    id:4,
     title: '4 - TREINAMENTO',
     section:[
       {
-        id:4,
+        id:1,
         subtitle:'Para eficiência operacional e satisfação de seu cliente',
         items:[
           {
@@ -94,11 +94,11 @@ export const IMPLEMENTATION_STEP: ImplementaionStepModel[] = [
   },
 
   {
-    id:1,
+    id:5,
     title: '5 - AVALIAÇÃO E REVISÃO',
     section:[
       {
-        id:5,
+        id:1,
         subtitle:'Progresso em relação aos planos implementados',
         items:[
           {
