@@ -93,11 +93,11 @@
   <!-- Mobile menu, show/hide based on menu state.  -->
   <div
     class="md:hidden transform-gpu origin-top-left transition-all {{
-      menuOpen ? 'h-24' : 'scale-0 h-0 opacity-0'
+      menuOpen ? 'h-auto' : 'scale-0 h-0 opacity-0'
     }}"
     id="mobile-menu"
   >
-    <nav class="space-y-1 px-0 pb-3 pt-2 dark:px-2 sm:dark:px-3">
+    <nav class="space-y-1 px-0 pb-3 pt-2 dark:px-3">
       @for (route of routes; track route.id) {
         <a
           routerLink="{{ route.path }}"
