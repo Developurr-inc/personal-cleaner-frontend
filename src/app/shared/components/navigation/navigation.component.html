@@ -97,8 +97,19 @@
     }}"
     id="mobile-menu"
   >
-    <nav class="space-y-1 px-0 pb-3 pt-2 dark:px-3">
+    <nav class="space-y-1 pb-3 pt-2 px-3">
+
       @for (route of routes; track route.id) {
+        @if (route.id == 1){
+          <div>
+            <span class="dark:text-neutral-400 ps-4">Navegação: <br></span>
+          </div>
+        }
+        @if (route.id == 2){
+          <div>
+            <span class="dark:text-neutral-400 ps-4">Serviços: <br></span>
+          </div>
+        }
         <a
           routerLink="{{ route.path }}"
           class="h-full dark:h-auto border-s-4 dark:border-0 flex items-center dark:rounded-md ps-4 py-2 pe-3 text-gray-600 dark:text-slate-300{{
