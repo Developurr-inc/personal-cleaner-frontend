@@ -1,9 +1,9 @@
 export enum RouteNameEnum {
   HOME = 'Home',
-  MESSAGE = 'Agendamento',
   FAQ = 'FAQ',
-  TECHNICAL_ASSISTANCE = 'Assistência Técnica',
+  TECHNICAL_ASSISTANCE = 'Assistência',
   TRAINING = 'Treinamento',
   EQUIPMENTS = 'Equipamentos',
   PRODUCTS = 'Produtos',
+  IMPLEMENTATION = 'Programa de higiene',
 }
