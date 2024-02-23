@@ -8,10 +8,9 @@ describe('StepByStepComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [StepByStepComponent]
-    })
-    .compileComponents();
-    
+      imports: [StepByStepComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(StepByStepComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

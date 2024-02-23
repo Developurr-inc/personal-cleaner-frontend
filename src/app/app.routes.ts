@@ -43,9 +43,9 @@ export const routes: Routes = [
     title: `Personal Cleaner - ${RouteNameEnum.EQUIPMENTS}`,
   },
   {
-    path:RouteUrlEnum.IMPLEMENTATION,
+    path: RouteUrlEnum.IMPLEMENTATION,
     component: ImplementationComponent,
-    title:`Personal Cleaner - ${RouteNameEnum.IMPLEMENTATION}`
+    title: `Personal Cleaner - ${RouteNameEnum.IMPLEMENTATION}`,
   },
   {
     path: '**',

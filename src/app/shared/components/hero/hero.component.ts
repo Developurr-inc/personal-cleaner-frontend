@@ -10,5 +10,5 @@ import { RouterModule } from '@angular/router';
   styleUrl: './hero.component.css',
 })
 export class HeroComponent {
-RouteUrlEnum: any;
+  RouteUrlEnum: any;
 }

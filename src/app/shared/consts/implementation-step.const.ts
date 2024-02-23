@@ -1,17 +1,17 @@
-import { ImplementaionStepModel } from "../models/implementation-step.module"
+import { ImplementaionStepModel } from '../models/implementation-step.model';
 
 export const IMPLEMENTATION_STEP: ImplementaionStepModel[] = [
   {
     id: 1,
     title: '1 - CONHECER O CLIENTE',
-    section:[
+    section: [
       {
-        id:1,
-        subtitle:'Ouvir seus objetivos e desafios',
-        items:[
+        id: 1,
+        subtitle: 'Ouvir seus objetivos e desafios',
+        items: [
           {
             id: 1,
-            part:'Observar os procedimentos',
+            part: 'Observar os procedimentos',
           },
           {
             id: 2,
@@ -25,18 +25,17 @@ export const IMPLEMENTATION_STEP: ImplementaionStepModel[] = [
       },
     ],
   },
-
   {
     id: 2,
     title: '2 - FIRMAR PARCERIA',
-    section:[
+    section: [
       {
-        id:1,
-        subtitle:'Para vencer seus maiores desafios',
-        items:[
+        id: 1,
+        subtitle: 'Para vencer seus maiores desafios',
+        items: [
           {
             id: 1,
-            part:'Fale com o seu Personal Cleaner',
+            part: 'Fale com o seu Personal Cleaner',
           },
           {
             id: 2,
@@ -46,18 +45,17 @@ export const IMPLEMENTATION_STEP: ImplementaionStepModel[] = [
       },
     ],
   },
-
   {
-    id:3,
+    id: 3,
     title: '3 - IMPLEMENTAR',
-    section:[
+    section: [
       {
-        id:1,
-        subtitle:'Programa de higienização',
-        items:[
+        id: 1,
+        subtitle: 'Programa de higienização',
+        items: [
           {
             id: 1,
-            part:'Procedimentos corretos',
+            part: 'Procedimentos corretos',
           },
           {
             id: 2,
@@ -67,18 +65,17 @@ export const IMPLEMENTATION_STEP: ImplementaionStepModel[] = [
       },
     ],
   },
-
   {
-    id:4,
+    id: 4,
     title: '4 - TREINAMENTO',
-    section:[
+    section: [
       {
-        id:1,
-        subtitle:'Para eficiência operacional e satisfação de seu cliente',
-        items:[
+        id: 1,
+        subtitle: 'Para eficiência operacional e satisfação de seu cliente',
+        items: [
           {
             id: 1,
-            part:'Processos eficientes usando as soluções certas',
+            part: 'Processos eficientes usando as soluções certas',
           },
           {
             id: 2,
@@ -92,18 +89,17 @@ export const IMPLEMENTATION_STEP: ImplementaionStepModel[] = [
       },
     ],
   },
-
   {
-    id:5,
+    id: 5,
     title: '5 - AVALIAÇÃO E REVISÃO',
-    section:[
+    section: [
       {
-        id:1,
-        subtitle:'Progresso em relação aos planos implementados',
-        items:[
+        id: 1,
+        subtitle: 'Progresso em relação aos planos implementados',
+        items: [
           {
             id: 1,
-            part:'Revisar resultados e progresso',
+            part: 'Revisar resultados e progresso',
           },
           {
             id: 2,
@@ -113,5 +109,4 @@ export const IMPLEMENTATION_STEP: ImplementaionStepModel[] = [
       },
     ],
   },
-
-]
+];
