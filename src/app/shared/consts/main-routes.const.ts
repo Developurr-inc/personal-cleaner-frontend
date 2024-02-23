@@ -11,24 +11,30 @@ export const MAIN_ROUTES: RouteModel[] = [
   },
   {
     id: 2,
+    name: RouteNameEnum.IMPLEMENTATION,
+    path: RouteUrlEnum.IMPLEMENTATION,
+    active: false,
+  },
+  {
+    id: 3,
     name: RouteNameEnum.TECHNICAL_ASSISTANCE,
     path: RouteUrlEnum.TECHNICAL_ASSISTANCE,
     active: false,
     },
     {
-    id: 3,
+    id: 4,
     name: RouteNameEnum.TRAINING,
     path: RouteUrlEnum.TRAINING,
     active: false,
     },
     {
-    id: 4,
+    id: 5,
     name: RouteNameEnum.EQUIPMENTS,
     path: RouteUrlEnum.EQUIPMENTS,
     active: false,
     },
     {
-    id: 5,
+    id: 6,
     name: RouteNameEnum.PRODUCTS,
     path: RouteUrlEnum.PRODUCTS,
     active: false,
