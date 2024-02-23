@@ -15,7 +15,8 @@ import { ChemicalsComponent } from '../../shared/components/chemicals/chemicals.
   styleUrl: './products.component.css',
 })
 export class ProductsComponent {
-  apperComponent() {//Essa função altera as cores dos buttons e seus textos também além disso já está otimizada para o tema claro também
+  apperComponent() {
+    //Essa função altera as cores dos buttons e seus textos também além disso já está otimizada para o tema claro também
     const productContent: HTMLElement | null =
       document.getElementById('products-content');
     const chemicalsContent: HTMLElement | null =

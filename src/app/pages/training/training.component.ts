@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { TrainingContentComponent } from '../../shared/components/training-content/training-content.component'
+import { TrainingContentComponent } from '../../shared/components/training-content/training-content.component';
 import { StatsComponent } from '../../shared/components/stats/stats.component';
 
 @Component({

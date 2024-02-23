@@ -9,6 +9,7 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { TechnicalAssistanceComponent } from './pages/technical-assistance/technical-assistance.component';
 import { TrainingComponent } from './pages/training/training.component';
 import { EquipmentsComponent } from './pages/equipments/equipments.component';
+import { ImplementationComponent } from './pages/implementation/implementation.component';
 
 export const routes: Routes = [
   {
@@ -40,6 +41,11 @@ export const routes: Routes = [
     path: RouteUrlEnum.EQUIPMENTS,
     component: EquipmentsComponent,
     title: `Personal Cleaner - ${RouteNameEnum.EQUIPMENTS}`,
+  },
+  {
+    path: RouteUrlEnum.IMPLEMENTATION,
+    component: ImplementationComponent,
+    title: `Personal Cleaner - ${RouteNameEnum.IMPLEMENTATION}`,
   },
   {
     path: '**',
