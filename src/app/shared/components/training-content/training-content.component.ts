@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-training-content',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, NgOptimizedImage],
   templateUrl: './training-content.component.html',
   styleUrl: './training-content.component.css',
 })
