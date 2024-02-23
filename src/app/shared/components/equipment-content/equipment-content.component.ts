@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-equipment-content',
   standalone: true,
-  imports: [],
+  imports: [ NgOptimizedImage, CommonModule ],
   templateUrl: './equipment-content.component.html',
   styleUrl: './equipment-content.component.css',
 })
