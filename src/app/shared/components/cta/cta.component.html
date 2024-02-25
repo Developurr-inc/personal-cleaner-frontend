@@ -16,15 +16,9 @@
   <div
     class="my-6 px-6 md:my-0 md:flex md:w-2/3 md:flex-col md:justify-center md:ps-16 lg:w-1/2 lg:ps-20"
   >
-    <h3
-      class="text-md mb-2 font-bold {{ !subtitle ? 'hidden' : '' }} {{
-        color.replace('bg-', 'text-')
-      }}"
-    >
-      {{ subtitle }}
-    </h3>
-
-    <h2 class="mb-4 text-2xl font-extrabold md:text-3xl dark:text-gray-100">
+    <h2 class="mb-4 text-2xl font-extrabold md:text-3xl {{
+      color.replace('bg-', 'text-')
+    }}">
       {{ title }}
     </h2>
 
@@ -36,5 +30,5 @@
 
 <!-- Estamos forçando o compilador a injetar as classes abaixo no CSS final. Tem que rever isso depois. -->
 <span
-  class="text-emerald-500 text-green-400 text-lime-500 text-orange-500 text-purple-500 text-red-500 text-teal-500 text-yellow-500"
+  class="text-emerald-500 text-green-600 text-lime-500 text-orange-500 text-purple-500 text-red-500 text-teal-500 text-yellow-500"
 ></span>
