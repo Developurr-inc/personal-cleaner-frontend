@@ -5,5 +5,5 @@ export enum RouteNameEnum {
   TRAINING = 'Treinamento',
   EQUIPMENTS = 'Equipamentos',
   PRODUCTS = 'Produtos',
-  IMPLEMENTATION = 'Programa de higiene',
+  IMPLEMENTATION = 'Programa de Higiene',
 }
