@@ -2,8 +2,8 @@ import { Routes } from '@angular/router';
 
 import { HomeComponent } from './pages/home/home.component';
 import { FaqsComponent } from './pages/faqs/faqs.component';
-import { RouteUrlEnum } from './shared/enums/route-url.enum';
-import { RouteNameEnum } from './shared/enums/route-name.enum';
+import { RouteUrlEnum } from './core/enums/route-url.enum';
+import { RouteNameEnum } from './core/enums/route-name.enum';
 import { ProductsComponent } from './pages/products/products.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { TechnicalAssistanceComponent } from './pages/technical-assistance/technical-assistance.component';

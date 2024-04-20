@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { RouteUrlEnum } from '../../shared/enums/route-url.enum';
+import { RouteUrlEnum } from '../../core/enums/route-url.enum';
 
 @Component({
   selector: 'app-notfound',

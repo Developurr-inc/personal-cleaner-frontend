@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SERVICES } from '../../consts/services.const';
+import { SERVICES } from '../../../core/consts/services.const';
 import { NgOptimizedImage } from '@angular/common';
 
 @Component({

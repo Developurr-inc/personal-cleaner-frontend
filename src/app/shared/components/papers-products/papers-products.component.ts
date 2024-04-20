@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PAPERS_PRODUCTS } from '../../consts/paper-products.const';
+import { PAPERS_PRODUCTS } from '../../../core/consts/paper-products.const';
 
 @Component({
   selector: 'app-papers-products',
