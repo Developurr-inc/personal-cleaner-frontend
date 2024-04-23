@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 
-import { HomeComponent } from './pages/home/home.component';
 import { FaqsComponent } from './pages/faqs/faqs.component';
 import { RouteUrlEnum } from './core/enums/route-url.enum';
 import { RouteNameEnum } from './core/enums/route-name.enum';
@@ -13,9 +12,8 @@ import { ImplementationComponent } from './pages/implementation/implementation.c
 
 export const routes: Routes = [
   {
-    path: RouteUrlEnum.HOME,
-    component: HomeComponent,
-    title: `Personal Cleaner - ${RouteNameEnum.HOME}`,
+    path: '',
+    loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
   },
   {
     path: RouteUrlEnum.FAQ,
