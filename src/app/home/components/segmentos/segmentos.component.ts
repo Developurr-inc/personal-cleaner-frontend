@@ -4,12 +4,12 @@ import { CtaComponent } from '../../../shared/components/cta/cta.component';
 import { SEGMENTS } from '../../../core/consts/segments.const';
 
 @Component({
-  selector: 'app-segment',
+  selector: 'app-segmentos',
   standalone: true,
   imports: [BadgeComponent, CtaComponent],
-  templateUrl: './segment.component.html',
-  styleUrl: './segment.component.css',
+  templateUrl: './segmentos.component.html',
+  styleUrl: './segmentos.component.css',
 })
-export class SegmentComponent {
+export class SegmentosComponent {
   segments = SEGMENTS;
 }

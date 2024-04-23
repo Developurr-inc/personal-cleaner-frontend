@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BlogSectionsComponent } from '../blog-sections/blog-sections.component';
-import { HeroComponent } from '../hero/hero.component';
-import { SegmentComponent } from '../segment/segment.component';
+import { BlogSectionsComponent } from '../../components/blog-sections/blog-sections.component';
+import { HeroComponent } from '../../components/hero/hero.component';
+import { SegmentosComponent } from '../../components/segmentos/segmentos.component';
 import { NotfoundComponent } from '../../../pages/notfound/notfound.component';
 
 @Component({
@@ -10,7 +10,7 @@ import { NotfoundComponent } from '../../../pages/notfound/notfound.component';
   standalone: true,
   imports: [
     CommonModule,
-    SegmentComponent,
+    SegmentosComponent,
     HeroComponent,
     BlogSectionsComponent,
     NotfoundComponent,
