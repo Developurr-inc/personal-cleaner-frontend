@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { PapersProductsComponent } from '../../shared/components/papers-products/papers-products.component';
 import { SupportProductsComponent } from '../../shared/components/support-products/support-products.component';
 import { ChemicalsComponent } from '../../shared/components/chemicals/chemicals.component';
+import { DispensersProductsComponent } from '../../shared/components/dispensers-products/dispensers-products.component';
+import { AccessoriesProductsComponent } from '../../shared/components/accessories-products/accessories-products.component';
+import { EquipmentsProductsComponent } from '../../shared/components/equipments-products/equipments-products.component';
 
 @Component({
   selector: 'app-products',
@@ -10,85 +13,114 @@ import { ChemicalsComponent } from '../../shared/components/chemicals/chemicals.
     PapersProductsComponent,
     SupportProductsComponent,
     ChemicalsComponent,
+    DispensersProductsComponent,
+    AccessoriesProductsComponent,
+    EquipmentsProductsComponent,
   ],
   templateUrl: './products.component.html',
   styleUrl: './products.component.css',
 })
 export class ProductsComponent {
   toggle(event:any) {
-    const btns = document.getElementsByClassName("btn")
+
     let target = event.target || event.currentTarget || event.nodeValue;
     let idAttr = target.attributes.id;
     let selected = idAttr.nodeValue
+    console.log(idAttr)
+    console.log(idAttr.nodeValue)
 
+    //Constanes dos botões
     const btnProducts = document.getElementById('btn-products');
     const btnChemicals = document.getElementById('btn-chemicals');
+    const btnDispensers = document.getElementById('btn-dispensers');
+    const btnAccessories = document.getElementById('btn-accessories');
+    const btnEquipments = document.getElementById('btn-equipments');
 
-    let productsId = document.getElementById("btn-products")?.id
-    let chemicalsId = document.getElementById("btn-chemicals")?.id
+    //Constantes para comparar elemento selecionado com o id dos botões
+    const productsId = document.getElementById("btn-products")?.id;
+    const chemicalsId = document.getElementById("btn-chemicals")?.id;
+    const dispensersId = document.getElementById("btn-dispensers")?.id;
+    const accessoriesId = document.getElementById("btn-accessories")?.id;
+    const equipmentsId = document.getElementById("btn-equipments")?.id;
 
-    let productsContent = document.getElementById("products-content")
-    let chemicalsContent = document.getElementById("chemicals-content")
-
-    // console.log(idAttr)
-    // console.log(productsId)
-    console.log(selected)
-    // console.log(chemicalsId)
+    //Constantes para acionar ou esconder o conteúdo
+    const productsContent = document.getElementById("products-content");
+    const chemicalsContent = document.getElementById("chemicals-content");
+    const dispensersContent = document.getElementById("dispensers-content");
+    const accessoriesContent = document.getElementById("accessories-content");
+    const equipmentsContent = document.getElementById("equipments-content");
 
     if (selected == productsId) {
-      chemicalsContent?.classList.add('hidden')
-      btnProducts?.classList.add('bg-indigo-600');
-      btnProducts?.classList.add('text-neutral-50');
-      btnChemicals?.classList.remove('bg-indigo-600');
-      btnChemicals?.classList.remove('text-neutral-50');
-      console.log(productsContent?.classList.contains('hidden'))
-      console.log("Olá")
+      //conteúdo
+      productsContent?.classList.remove('hidden');
+      chemicalsContent?.classList.add('hidden');
+      dispensersContent?.classList.add('hidden');
+      accessoriesContent?.classList.add('hidden');
+      equipmentsContent?.classList.add('hidden');
+      //estilo button
+      btnProducts?.classList.add('valid');
+      btnChemicals?.classList.remove('valid');
+      btnDispensers?.classList.remove('valid');
+      btnAccessories?.classList.remove('valid');
+      btnEquipments?.classList.remove('valid');
+
     } else if (selected == chemicalsId) {
-      chemicalsContent?.classList.remove('hidden')
-      productsContent?.classList.add('hidden')
-      btnProducts?.classList.remove('bg-indigo-600');
-      btnProducts?.classList.remove('text-neutral-50');
-      btnChemicals?.classList.add('bg-indigo-600');
-      btnChemicals?.classList.add('text-neutral-50');
-      console.log(chemicalsContent?.classList.contains('hidden'))
-      console.log("Olá 2")
+
+      productsContent?.classList.add('hidden');
+      chemicalsContent?.classList.remove('hidden');
+      dispensersContent?.classList.add('hidden');
+      accessoriesContent?.classList.add('hidden');
+      equipmentsContent?.classList.add('hidden');
+
+      btnProducts?.classList.remove('valid');
+      btnDispensers?.classList.remove('valid');
+      btnChemicals?.classList.add('valid');
+      btnAccessories?.classList.remove('valid');
+      btnEquipments?.classList.remove('valid');
+
+    } else if (selected == dispensersId) {
+
+      productsContent?.classList.add('hidden');
+      chemicalsContent?.classList.add('hidden');
+      dispensersContent?.classList.remove('hidden');
+      accessoriesContent?.classList.add('hidden');
+      equipmentsContent?.classList.add('hidden');
+
+      btnProducts?.classList.remove('valid');
+      btnChemicals?.classList.remove('valid');
+      btnDispensers?.classList.add('valid');
+      btnAccessories?.classList.remove('valid');
+      btnEquipments?.classList.remove('valid');
+
+    } else if (selected == accessoriesId) {
+
+      productsContent?.classList.add('hidden');
+      chemicalsContent?.classList.add('hidden');
+      dispensersContent?.classList.add('hidden');
+      accessoriesContent?.classList.remove('hidden');
+      equipmentsContent?.classList.add('hidden');
+
+      btnProducts?.classList.remove('valid');
+      btnChemicals?.classList.remove('valid');
+      btnDispensers?.classList.remove('valid');
+      btnAccessories?.classList.add('valid');
+      btnEquipments?.classList.remove('valid');
+
+    } else {
+
+      productsContent?.classList.add('hidden');
+      chemicalsContent?.classList.add('hidden');
+      dispensersContent?.classList.add('hidden');
+      accessoriesContent?.classList.add('hidden');
+      equipmentsContent?.classList.remove('hidden');
+
+      btnProducts?.classList.remove('valid');
+      btnChemicals?.classList.remove('valid');
+      btnDispensers?.classList.remove('valid');
+      btnAccessories?.classList.remove('valid');
+      btnEquipments?.classList.add('valid');
+
     }
+
   }
-
-//   apperComponent(e.target): void {
-//     const buttonId = (e.target as HTMLElement).id;
-//     console.log('ID do botão clicado:', buttonId);
-//   ;
-// }
-  // apperComponent() {
-  //   //Essa função altera as cores dos buttons e seus textos também além disso já está otimizada para o tema claro também
-  //   const productContent: HTMLElement | null =
-  //     document.getElementById('products-content');
-  //   const chemicalsContent: HTMLElement | null =
-  //     document.getElementById('chemicals-content');
-  //   const btnProducts = document.getElementById('btn-products');
-  //   const btnChemicals = document.getElementById('btn-chemicals');
-  //   let clicked: any = document.getElementsByClassName("btn");
-  //   let clickedStatus: any = clicked.attributes[0].value
-
-
-    // console.log(clickedStatus)
-    // if (productContent?.classList.contains('hidden')) {
-    //   productContent?.classList.remove('hidden');
-    //   chemicalsContent?.classList.add('hidden');
-    //   btnProducts?.classList.add('bg-indigo-600');
-    //   btnProducts?.classList.add('text-neutral-50');
-    //   btnChemicals?.classList.remove('bg-indigo-600');
-    //   btnChemicals?.classList.remove('text-neutral-50');
-
-    // } else {
-    //   productContent?.classList.add('hidden');
-    //   chemicalsContent?.classList.remove('hidden');
-    //   btnProducts?.classList.remove('bg-indigo-600');
-    //   btnProducts?.classList.remove('text-neutral-50');
-    //   btnChemicals?.classList.add('bg-indigo-600');
-    //   btnChemicals?.classList.add('text-neutral-50');
-    // }
-  //   console.log(this.apperComponent())
-  // }
 }

@@ -3,30 +3,44 @@ import { papersProductsModel } from '../models/paper-products.model';
 export const PAPERS_PRODUCTS: papersProductsModel[] = [
   {
     id: 1,
-    title: 'Papel toalha Quick - 1 unidades',
-    subtitle: 'Embalagem econômica, alta absorção',
+    title: 'Folhas Simples - IGL 24 - Guardanapo Lanche',
+    subtitle: '720 folhas 10 cm por 21,6 cm',
     image:
-      'https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-01.jpg',
+      '../../../../assets/papel/papel-igl24.png',
   },
   {
     id: 2,
-    title: 'Papel toalha Quick - 2 unidades',
-    subtitle: 'Embalagem econômica, alta absorção',
+    title: 'Folhas Duplas - IGM 02 - Guardanapo Interfolhado',
+    subtitle: '250 folhas 15 cm por 21 cm',
     image:
-      'https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-01.jpg',
+      '../../../../assets/papel/papel-igm02.png',
   },
   {
     id: 3,
-    title: 'Papel toalha Quick - 3 unidades',
-    subtitle: 'Embalagem econômica, alta absorção',
+    title: 'Folha Simples - ITI 01 - Toalha Interfolhada',
+    subtitle: '240 folhas 22 cm por 21,6 cm',
     image:
-      'https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-01.jpg',
+      '../../../../assets/papel/papel-iti01.png',
   },
   {
     id: 4,
-    title: 'Papel toalha Quick - 4 unidades',
-    subtitle: 'Embalagem econômica, alta absorção',
+    title: 'Folhas Simples - IHR 08 - Rolo Higiênico',
+    subtitle: '8 rolos de 300 m por 10 cm',
     image:
-      'https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-01.jpg',
+      '../../../../assets/papel/papel-ihr08.png',
+  },
+  {
+    id: 5,
+    title: 'Folha Dupla - IHI 12 - Higiênico Interfolhado',
+    subtitle: '600 folhas de 11 cm por 21,6 cm',
+    image:
+      '../../../../assets/papel/papel-ihi12.png',
+  },
+  {
+    id: 6,
+    title: 'Folha Simples - ITS 00 - Toalha Bobina',
+    subtitle: '6 Rolos de 200 m por 20 cm',
+    image:
+      '../../../../assets/papel/papel-its00.png',
   },
 ];
