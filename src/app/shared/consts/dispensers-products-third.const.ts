@@ -7,7 +7,7 @@ export const DISPENSERS_PRODUCTS_THIRD: dispensersProductsModel[] = [
     subtitle: 'Design mais tradicional para guardanapos de lanche',
     class:'',
     image:
-      '../../../../assets/../../../../assets/dispensers/dispensersThird/dispenser-para-guardanapo-lanche-1.png',
+      '../../../../assets/../../../../assets/dispensers/dispensersThird/dispenser-para-guardanapo-lanche-1.webp',
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const DISPENSERS_PRODUCTS_THIRD: dispensersProductsModel[] = [
     subtitle: 'Design mais moderno para guardanapos de lanche',
     class:'',
     image:
-      '../../../../assets/dispensers/dispensersThird/dispenser-para-guardanapo-lanche-2.png',
+      '../../../../assets/dispensers/dispensersThird/dispenser-para-guardanapo-lanche-2.webp',
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ export const DISPENSERS_PRODUCTS_THIRD: dispensersProductsModel[] = [
     subtitle: 'Para o seu time ter mais eficiência',
     class:'',
     image:
-      '../../../../assets/dispensers/dispensersThird/dispenser-guardanapeira-torre.png',
+      '../../../../assets/dispensers/dispensersThird/dispenser-guardanapeira-torre.webp',
   },
   {
     id: 4,
@@ -31,6 +31,6 @@ export const DISPENSERS_PRODUCTS_THIRD: dispensersProductsModel[] = [
     subtitle: 'Possibilita colocar anúncios',
     class:'',
     image:
-      '../../../../assets/dispensers/dispensersThird/guardanapeira-mesa.png',
+      '../../../../assets/dispensers/dispensersThird/guardanapeira-mesa.webp',
   },
 ];

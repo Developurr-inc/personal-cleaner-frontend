@@ -7,7 +7,7 @@ export const DISPENSERS_PRODUCTS: dispensersProductsModel[] = [
     subtitle: 'Para gerar mais economia',
     class:'',
     image:
-      '../../../../assets/../../../../assets/dispensers/dispensersFirst/dispenser-auto-corte-para-toalha-bobina.png',
+      '../../../../assets/../../../../assets/dispensers/dispensersFirst/dispenser-auto-corte-para-toalha-bobina.webp',
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const DISPENSERS_PRODUCTS: dispensersProductsModel[] = [
     subtitle: 'Para ambientes pequenos e/ou de pouco movimento',
     class:'',
     image:
-      '../../../../assets/dispensers/dispensersFirst/dispenser-para-higienico-interfolhado.png',
+      '../../../../assets/dispensers/dispensersFirst/dispenser-para-higienico-interfolhado.webp',
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ export const DISPENSERS_PRODUCTS: dispensersProductsModel[] = [
     subtitle: 'Para ambientes grandes e/ou de grande movimento',
     class:'',
     image:
-      '../../../../assets/dispensers/dispensersFirst/dispenser-para-higienico-rolo.png',
+      '../../../../assets/dispensers/dispensersFirst/dispenser-para-higienico-rolo.webp',
   },
   {
     id: 4,
@@ -31,7 +31,7 @@ export const DISPENSERS_PRODUCTS: dispensersProductsModel[] = [
     subtitle: 'Para gerar economia, cada click na medida certa',
     class:'',
     image:
-      '../../../../assets/dispensers/dispensersFirst/dispenser-para-sabonete-liquido-refil-800ml.png',
+      '../../../../assets/dispensers/dispensersFirst/dispenser-para-sabonete-liquido-refil-800ml.webp',
   },
   {
     id: 5,
@@ -39,6 +39,6 @@ export const DISPENSERS_PRODUCTS: dispensersProductsModel[] = [
     subtitle: 'Para facilidade e agilidade',
     class:'',
     image:
-      '../../../../assets/dispensers/dispensersFirst/dispenser-para-toalha-interfolhada.png',
+      '../../../../assets/dispensers/dispensersFirst/dispenser-para-toalha-interfolhada.webp',
   },
 ];
