@@ -1,0 +1,76 @@
+<h2 class="my-6 text-3xl font-bold dark:text-white">Nossos Produtos</h2>
+<h3 class="my-6 text-2xl font-bold dark:text-white">Dispensers executivos</h3>
+<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+  @for (dispenser of dispensers; track dispenser.id) {
+    <div>
+      <div
+        style="
+        background-image: url('{{ dispenser.image }}');
+      "
+        class="bg-contain bg-center bg-no-repeat bg-neutral-50 relative h-96 overflow-hidden rounded-lg lg:h-64"
+      >
+        <div
+          class="h-full w-full bg-gradient-to-t from-neutral-800/60 from-0% via-neutral-600/20 via-20% to-neutral-50/0 to-50%"
+        ></div>
+      </div>
+      <div>
+        <p class="text-md mb-2 mt-6 leading-5 dark:text-white">
+          {{ dispenser.title }}
+        </p>
+        <p class="text-sm leading-5 text-zinc-600 dark:text-neutral-400">
+          {{ dispenser.subtitle }}
+        </p>
+      </div>
+    </div>
+  }
+</div>
+<h3 class="my-6 text-2xl font-bold dark:text-white">Dispensers padrão - linha premium</h3>
+<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+  @for (dispenserSecond of dispensersSecond; track dispenserSecond.id) {
+    <div>
+      <div
+        style="
+        background-image: url('{{ dispenserSecond.image }}');
+      "
+        class=" bg-contain bg-center bg-no-repeat bg-neutral-50 relative h-96 overflow-hidden rounded-lg lg:h-64" [ngClass]="dispenserSecond.class"
+      ><!--ngClass serve para aplicar classes diâmicas nesse caso foi necessário para inverter a imagem-->
+        <div
+          class="h-full w-full bg-gradient-to-t from-neutral-800/60 from-0% via-neutral-600/20 via-20% to-neutral-50/0 to-50%"
+        ></div>
+      </div>
+      <div>
+        <p class="text-md mb-2 mt-6 leading-5 dark:text-white">
+          {{ dispenserSecond.title }}
+        </p>
+        <p class="text-sm leading-5 text-zinc-600 dark:text-neutral-400">
+          {{ dispenserSecond.subtitle }}
+        </p>
+      </div>
+    </div>
+  }
+</div>
+<h3 class="my-6 text-2xl font-bold dark:text-white">Dispensers de mesa</h3>
+<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+  @for (dispenserThird of dispensersThird; track dispenserThird.id) {
+    <div>
+      <div
+        style="
+        background-image: url('{{ dispenserThird.image }}');
+      "
+        class="bg-contain bg-center bg-no-repeat bg-neutral-50 relative h-96 overflow-hidden rounded-lg lg:h-64"
+      >
+        <div
+          class="h-full w-full bg-gradient-to-t from-neutral-800/60 from-0% via-neutral-600/20 via-20% to-neutral-50/0 to-50%"
+        ></div>
+      </div>
+      <div>
+        <p class="text-md mb-2 mt-6 leading-5 dark:text-white">
+          {{ dispenserThird.title }}
+        </p>
+        <p class="text-sm leading-5 text-zinc-600 dark:text-neutral-400">
+          {{ dispenserThird.subtitle }}
+        </p>
+      </div>
+    </div>
+  }
+</div>
