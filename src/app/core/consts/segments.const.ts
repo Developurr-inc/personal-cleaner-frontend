@@ -1,4 +1,4 @@
-import { SegmentModel } from '../../shared/models/segment.model';
+import { SegmentModel } from '../models/segment.model';
 
 export const SEGMENTS: SegmentModel[] = [
   {

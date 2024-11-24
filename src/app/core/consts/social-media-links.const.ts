@@ -1,4 +1,4 @@
-import { SocialMediaLinkModel } from '../../shared/models/social-media-link.model';
+import { SocialMediaLinkModel } from '../models/social-media-link.model';
 
 export const SOCIAL_MEDIA_LINKS: SocialMediaLinkModel[] = [
   {

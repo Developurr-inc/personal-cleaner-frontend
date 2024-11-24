@@ -1,4 +1,4 @@
-import { ServiceModel } from '../../shared/models/service.model';
+import { ServiceModel } from '../models/service.model';
 import { RouteUrlEnum } from '../enums/route-url.enum';
 import { RouteNameEnum } from '../enums/route-name.enum';
 

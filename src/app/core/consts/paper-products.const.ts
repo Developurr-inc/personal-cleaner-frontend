@@ -1,4 +1,4 @@
-import { papersProductsModel } from '../../shared/models/paper-products.model';
+import { papersProductsModel } from '../models/paper-products.model';
 
 export const PAPERS_PRODUCTS: papersProductsModel[] = [
   {

@@ -1,4 +1,4 @@
-import { supportProductsModel } from '../../shared/models/support-products.model';
+import { supportProductsModel } from '../models/support-products.model';
 
 export const SUPPORT_PRODUCTS: supportProductsModel[] = [
   {
