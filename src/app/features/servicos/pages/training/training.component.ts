@@ -6,7 +6,7 @@ import { StatsComponent } from '../../../../shared/components/stats/stats.compon
 @Component({
   selector: 'app-training',
   standalone: true,
-  imports: [TrainingContentComponent, StatsComponent, CommonModule, NgOptimizedImage],
+  imports: [TrainingContentComponent, StatsComponent, CommonModule],
   templateUrl: './training.component.html',
   styleUrl: './training.component.css',
 })

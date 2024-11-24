@@ -11,7 +11,7 @@ import { EquipmentsProductsComponent } from '../../shared/components/equipments-
   standalone: true,
   imports: [
     PapersProductsComponent,
-    SupportProductsComponent,
+    // SupportProductsComponent,
     ChemicalsComponent,
     DispensersProductsComponent,
     AccessoriesProductsComponent,
