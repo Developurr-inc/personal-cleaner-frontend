@@ -1,11 +1,11 @@
 <h2 class="my-6 text-3xl font-bold dark:text-white">Nossos Produtos</h2>
-<h3 class="my-6 text-2xl font-bold dark:text-white">Papéis</h3>
+<h3 class="my-6 text-2xl font-bold dark:text-white">Equipamentos</h3>
 <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-  @for (paper of papers; track paper.id) {
+  @for (equipment of equipments; track equipment.id) {
     <div>
       <div
         style="
-        background-image: url('{{ paper.image }}');
+        background-image: url('{{ equipment.image }}');
       "
         class="bg-contain bg-center bg-no-repeat bg-neutral-50 relative h-96 overflow-hidden rounded-lg lg:h-64"
       >
@@ -15,10 +15,10 @@
       </div>
       <div>
         <p class="text-md mb-2 mt-6 leading-5 dark:text-white">
-          {{ paper.title }}
+          {{ equipment.title }}
         </p>
         <p class="text-sm leading-5 text-zinc-600 dark:text-neutral-400">
-          {{ paper.subtitle }}
+          {{ equipment.subtitle }}
         </p>
       </div>
     </div>
