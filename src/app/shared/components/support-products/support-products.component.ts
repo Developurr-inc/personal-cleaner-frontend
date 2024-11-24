@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SUPPORT_PRODUCTS } from '../../consts/support-products.const';
+import { SUPPORT_PRODUCTS } from '../../../core/consts/support-products.const';
 
 @Component({
   selector: 'app-support-products',

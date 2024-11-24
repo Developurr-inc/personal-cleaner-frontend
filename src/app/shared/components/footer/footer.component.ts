@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { MAIN_ROUTES } from '../../consts/main-routes.const';
-import { SOCIAL_MEDIA_LINKS } from '../../consts/social-media-links.const';
-import { HELP_ROUTES } from '../../consts/help-routes.const';
-import { SERVICES } from '../../consts/services.const';
+import { MAIN_ROUTES } from '../../../core/consts/main-routes.const';
+import { SOCIAL_MEDIA_LINKS } from '../../../core/consts/social-media-links.const';
+import { HELP_ROUTES } from '../../../core/consts/help-routes.const';
+import { SERVICES } from '../../../core/consts/services.const';
 
 @Component({
   selector: 'app-footer',

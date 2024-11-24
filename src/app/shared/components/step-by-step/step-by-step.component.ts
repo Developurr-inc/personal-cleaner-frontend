@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ImplementaionStepModel } from '../../models/implementation-step.model';
+import { ImplementaionStepModel } from '../../../core/models/implementation-step.model';
 
 @Component({
   selector: 'app-step-by-step',

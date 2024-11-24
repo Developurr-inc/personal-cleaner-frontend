@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Router, RouterLink } from '@angular/router';
 
-import { RouteModel } from '../../models/route.model';
-import { RouteUrlEnum } from '../../enums/route-url.enum';
-import { MAIN_ROUTES } from '../../consts/main-routes.const';
-import { RouteNameEnum } from '../../enums/route-name.enum';
+import { RouteModel } from '../../../core/models/route.model';
+import { RouteUrlEnum } from '../../../core/enums/route-url.enum';
+import { MAIN_ROUTES } from '../../../core/consts/main-routes.const';
+import { RouteNameEnum } from '../../../core/enums/route-name.enum';
 
 @Component({
   selector: 'app-navigation',
