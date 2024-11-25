@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { EquipmentContentComponent } from '../../../../shared/components/equipment-content/equipment-content.component';
+import { EquipmentContentComponent } from '../../../../shared/components/equipment-page-content/equipment-content.component';
 import { StatsComponent } from '../../../../shared/components/stats/stats.component';
 
 @Component({

@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { PapersProductsComponent } from '../../../../shared/components/papers-products/papers-products.component';
 import { SupportProductsComponent } from '../../../../shared/components/support-products/support-products.component';
 import { ChemicalsComponent } from '../../../../shared/components/chemicals/chemicals.component';
-import { DispensersProductsComponent } from '../../shared/components/dispensers-products/dispensers-products.component';
-import { AccessoriesProductsComponent } from '../../shared/components/accessories-products/accessories-products.component';
-import { EquipmentsProductsComponent } from '../../shared/components/equipments-products/equipments-products.component';
+import { DispensersProductsComponent } from '../../../../shared/components/dispensers-products/dispensers-products.component';
+import { AccessoriesProductsComponent } from '../../../../shared/components/accessories-products/accessories-products.component';
+import { EquipmentsProductsComponent } from '../../../../shared/components/equipments-products/equipments-products.component';
 
 @Component({
   selector: 'app-produtos',

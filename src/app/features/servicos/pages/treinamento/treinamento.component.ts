@@ -4,10 +4,10 @@ import { TrainingContentComponent } from '../../../../shared/components/training
 import { StatsComponent } from '../../../../shared/components/stats/stats.component';
 
 @Component({
-  selector: 'app-training',
+  selector: 'app-Treinamento',
   standalone: true,
   imports: [TrainingContentComponent, StatsComponent, CommonModule],
-  templateUrl: './training.component.html',
-  styleUrl: './training.component.css',
+  templateUrl: './Treinamento.component.html',
+  styleUrl: './Treinamento.component.css',
 })
-export class TrainingComponent { }
+export class TreinamentoComponent { }
