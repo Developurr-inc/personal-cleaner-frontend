@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
-import { TrainingContentComponent } from '../../../../shared/components/training-content/training-content.component';
-import { StatsComponent } from '../../../../shared/components/stats/stats.component';
+import { TrainingContentComponent } from '../../components/training-content/training-content.component';
+import { StatsComponent } from '../../components/stats/stats.component';
 
 @Component({
   selector: 'app-Treinamento',

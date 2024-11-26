@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
-import { EquipmentContentComponent } from '../../../../shared/components/equipment-page-content/equipment-content.component';
-import { StatsComponent } from '../../../../shared/components/stats/stats.component';
+import { EquipmentContentComponent } from '../../components/equipment-page-content/equipment-content.component';
+import { StatsComponent } from '../../components/stats/stats.component';
 
 @Component({
   selector: 'app-equipamentos',

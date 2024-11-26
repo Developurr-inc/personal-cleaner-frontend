@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
-import { EQUIPMENTS_PRODUCTS } from '../../../core/consts/equipments-products.const';
+import { EQUIPMENTS_PRODUCTS } from '../../../../core/consts/equipments-products.const';
 
 @Component({
   selector: 'app-equipments-products',

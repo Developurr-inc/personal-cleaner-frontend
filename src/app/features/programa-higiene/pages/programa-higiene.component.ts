@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { StepByStepComponent } from '../../../shared/components/step-by-step/step-by-step.component';
+import { StepByStepComponent } from '../components/step-by-step/step-by-step.component';
 import { IMPLEMENTATION_STEP } from '../../../core/consts/implementation-step.const';
 
 @Component({

@@ -16,11 +16,15 @@ export const routes: Routes = [
   },
   {
     path: '',
-    loadChildren: () => import('./features/nao-encontrado/nao-encontrado.module').then(m => m.NaoEncontradoModule)
+    loadChildren: () => import('./features/programa-higiene/programa-higiene.module').then(m => m.ProgramaHigieneModule)
   },
   {
     path: RouteUrlEnum.FAQ,
     component: FaqsComponent,
     title: `Personal Cleaner - ${RouteNameEnum.FAQ}`,
   },
+  {
+    path: '',
+    loadChildren: () => import('./features/nao-encontrado/nao-encontrado.module').then(m => m.NaoEncontradoModule)
+  }
 ];
