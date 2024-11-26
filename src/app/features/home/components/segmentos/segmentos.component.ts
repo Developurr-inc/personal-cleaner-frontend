@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 // import { BadgeComponent } from '../../../../shared/components/badge/badge.component';
-import { CtaComponent } from '../../../../shared/components/cta/cta.component';
+import { CtaComponent } from '../cta/cta.component';
 import { SEGMENTS } from '../../../../core/consts/segments.const';
 
 @Component({

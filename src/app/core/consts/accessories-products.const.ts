@@ -1,5 +1,4 @@
 import { accessoriesProductsModel } from '../models/accessories-products.model';
-
 export const ACCESSORIES_PRODUCTS: accessoriesProductsModel[] = [
   {
     id: 1,
