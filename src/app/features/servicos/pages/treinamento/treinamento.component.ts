@@ -7,7 +7,7 @@ import { StatsComponent } from '../../components/stats/stats.component';
   selector: 'app-Treinamento',
   standalone: true,
   imports: [TrainingContentComponent, StatsComponent, CommonModule],
-  templateUrl: './Treinamento.component.html',
-  styleUrl: './Treinamento.component.css',
+  templateUrl: './treinamento.component.html',
+  styleUrl: './treinamento.component.css',
 })
 export class TreinamentoComponent { }
