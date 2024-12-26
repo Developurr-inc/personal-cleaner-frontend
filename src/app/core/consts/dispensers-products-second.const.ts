@@ -4,7 +4,7 @@ export const DISPENSERS_PRODUCTS_SECOND: dispensersProductsModel[] = [//EXPORTAR
   {
     id: 1,
     title: 'Dispenser auto-corte para toalha bobina',
-    subtitle: 'Para gerar mais economia',
+    subtitle: '',
     class:'',
     image:
       '../../../../assets/../../../../assets/dispensers/dispensersSecond/dispenser-auto-corte-para-toalha-bobina.webp',
@@ -12,7 +12,7 @@ export const DISPENSERS_PRODUCTS_SECOND: dispensersProductsModel[] = [//EXPORTAR
   {
     id: 2,
     title: 'Dispenser para toalha interfolhada',
-    subtitle: 'Para gerar mais agilidade',
+    subtitle: '',
     class:'',
     image:
       '../../../../assets/dispensers/dispensersSecond/dispenserpara-toalha-interfolhada.webp',
@@ -20,7 +20,7 @@ export const DISPENSERS_PRODUCTS_SECOND: dispensersProductsModel[] = [//EXPORTAR
   {
     id: 3,
     title: 'Dispenser para toalha interfolhada',
-    subtitle: 'Para gerar mais economia',
+    subtitle: '',
     class:'',
     image:
       '../../../../assets/dispensers/dispensersSecond/dispenser-para-toalha-interfolhada.webp',
