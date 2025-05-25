@@ -1,6 +1,6 @@
-import { papersProductsModel } from '../models/paper-products.model';
+import { ProductModel } from '../domain/product.model';
 
-export const PAPERS_PRODUCTS: papersProductsModel[] = [
+export const PAPERS_PRODUCTS: ProductModel[] = [
   {
     id: 1,
     title: 'Folhas Simples - IGL 24 - Guardanapo Lanche',

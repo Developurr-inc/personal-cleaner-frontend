@@ -1,17 +1,17 @@
-import { accessoriesProductsModel } from '../models/accessories-products.model';
+import { ProductModel } from '../domain/product.model';
 
-export const ACCESSORIES_SECOND_PRODUCTS: accessoriesProductsModel[] = [
+export const ACCESSORIES_SECOND_PRODUCTS: ProductModel[] = [
   {
     id: 1,
     title: 'Borrifadores',
-    subtitle: 'Para facilitar a aplificação de forma mais econômica e armogenea na superfície, pulverizando o produto na superfíce de forma homogênea pulverizando os produtos na superfície',
+    subtitle: 'Para facilitar a aplificação de forma mais econômica e armogenea na superfície, pulverizando o produto na superfíce.',
     image:
       '../../../../assets/accessories/accessoriesSecond/borrifadores.webp',
   },
   {
     id: 2,
     title: 'Pumps',
-    subtitle: 'A fim de ajudar na aplicação correta dos produtos e evitar a contaminação',
+    subtitle: 'A fim de ajudar nas dosagens dos produtos de forma bombeada.',
     image:
       '../../../../assets/accessories/accessoriesSecond/pumps.webp',
   },

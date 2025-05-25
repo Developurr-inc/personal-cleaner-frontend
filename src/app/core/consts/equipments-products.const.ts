@@ -1,22 +1,15 @@
-import { equipmentsProductsModel } from "../models/equipments-products.model";
+import { ProductModel } from "../domain/product.model";
 
-export const EQUIPMENTS_PRODUCTS: equipmentsProductsModel[] = [
+export const EQUIPMENTS_PRODUCTS: ProductModel[] = [
   {
     id: 1,
-    title: 'Gerador de espuma',
-    subtitle: 'Diluição + Espuma + Enxágue.',
-    image:
-      '../../../../assets/equipamentos/DiluicaoEspumaEnxague.webp',
-  },
-  {
-    id: 2,
     title: 'Dosadores',
-    subtitle: 'Para facilitar medição da dosagem ideal dos produtos para máquinas de lavar louças',
+    subtitle: 'Para facilitar medição da dosagem ideal recomendada.',
     image:
       '../../../../assets/equipamentos/dosador.webp',
   },
   {
-    id: 3,
+    id: 2,
     title: 'Diluidores',
     subtitle: 'Para facilitar a diluição homogenea dos produtos.',
     image:

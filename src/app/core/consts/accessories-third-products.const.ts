@@ -1,17 +1,17 @@
-import { accessoriesProductsModel } from '../models/accessories-products.model';
+import { ProductModel } from '../domain/product.model';
 
-export const ACCESSORIES_THIRD_PRODUCTS: accessoriesProductsModel[] = [
+export const ACCESSORIES_THIRD_PRODUCTS: ProductModel[] = [
   {
     id: 1,
     title: 'Refil de protetor de Assento Sanitário',
-    subtitle: '',
+    subtitle: 'Modelo PAS50 - 120 folhas 35,5 cm x 44,5 cm',
     image:
       '../../../../assets/accessories/accessoriesThird/refilProtetorSanitario.webp',
   },
   {
     id: 2,
     title: 'Protetor de refil de assento sanitário',
-    subtitle: '',
+    subtitle: 'Para o refil Modelo PAS50 - 120 folhas 35,5 cm x 44,5 cm',
     image:
       '../../../../assets/accessories/accessoriesThird/protetorDeRefilSanitario.webp',
 
@@ -19,14 +19,14 @@ export const ACCESSORIES_THIRD_PRODUCTS: accessoriesProductsModel[] = [
   {
     id: 3,
     title: 'Refil de absorvente',
-    subtitle: '',
+    subtitle: 'Marca do absorvente sym - tipo único',
     image:
       '../../../../assets/accessories/accessoriesThird/refilAbsorvente.webp',
   },
   {
     id: 4,
     title: 'Protetor de refil de absorvente',
-    subtitle: '',
+    subtitle: 'Para o absorvente sym tipo único',
     image:
       '../../../../assets/accessories/accessoriesThird/protetorDeRefilAbsorvente.webp',
 
@@ -34,7 +34,7 @@ export const ACCESSORIES_THIRD_PRODUCTS: accessoriesProductsModel[] = [
   {
     id: 5,
     title: 'Tela de Mictório Azul',
-    subtitle: '',
+    subtitle: 'Tipo padão',
     image:
       '../../../../assets/accessories/accessoriesThird/telaDeMictorio.webp',
   },
