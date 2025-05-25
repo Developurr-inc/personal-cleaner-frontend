@@ -1,0 +1,32 @@
+<main class="m-auto my-10 px-4 text-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+  <div class="grid grid-cols-2 sm:flex justify-center gap-5">
+    @for (category of categories; track category.id) {
+    <app-service-button [id]="category.id" [text]="category.text" [selected]="category.state"
+      (toggleEvent)="toggleCategory($event)" />
+    }
+  </div>
+
+  <h2 class="my-6 text-5xl font-bold dark:text-white">Nossos Produtos</h2>
+
+  @switch (selectedCategory) {
+  @case ("chemicals") {
+  <app-service-chemicals />
+  }
+  @case ("papers") {
+  <app-service-list-products [title]="'Papéis'" [products]="papers" />
+  }
+  @case ("dispensers") {
+  <app-service-list-products [title]="'Dispensers executivos'" [products]="dispensers" />
+  <app-service-list-products [title]="'Dispensers padrão - linha premium'" [products]="dispensersSecond" />
+  <app-service-list-products [title]="'Dispensers de mesa'" [products]="dispensersThird" />
+  }
+  @case ("accessories") {
+  <app-service-list-products [title]="'Higiêne Bucal'" [products]="accessories" />
+  <app-service-list-products [title]="'Acessórios limpeza'" [products]="accessoriesSecond" />
+  <app-service-list-products [title]="'Acessórios sanitários'" [products]="accessoriesThird" />
+  }
+  @case ("equipments") {
+  <app-service-list-products [title]="'Equipamentos'" [products]="equipments" />
+  }
+  }
+</main>
