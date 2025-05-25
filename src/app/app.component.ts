@@ -14,8 +14,7 @@ import { FooterComponent } from "./shared/components/footer/footer.component";
     {
       provide: IMAGE_LOADER,
       useValue: (config: ImageLoaderConfig) => {
-        // let url = 'https://www.personal-cleaner.com';
-        let url = 'http://localhost:4200';
+        let url = 'https://www.personal-cleaner.com';
 
         if (!config.src.endsWith('.webp')) {
           return url + config.src;
