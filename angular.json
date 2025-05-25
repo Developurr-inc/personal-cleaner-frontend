@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-19-project": {
+    "personal-cleaner-frontend": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular-19-project",
+            "outputPath": "dist/personal-cleaner-frontend",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-19-project:build:production"
+              "buildTarget": "personal-cleaner-frontend:build:production"
             },
             "development": {
-              "buildTarget": "angular-19-project:build:development"
+              "buildTarget": "personal-cleaner-frontend:build:development"
             }
           },
           "defaultConfiguration": "development"
