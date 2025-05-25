@@ -1,6 +1,6 @@
-import { supportProductsModel } from '../models/support-products.model';
+import { ProductModel } from '../domain/product.model';
 
-export const SUPPORT_PRODUCTS: supportProductsModel[] = [
+export const SUPPORT_PRODUCTS: ProductModel[] = [
   {
     id: 1,
     title: 'Papel toalha Quick - 1 unidades',

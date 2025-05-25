@@ -1,35 +1,20 @@
 import { Component } from '@angular/core';
-import {
-  CommonModule,
-  IMAGE_LOADER,
-  ImageLoaderConfig,
-  NgOptimizedImage,
-} from '@angular/common';
-import { RouterLink, RouterOutlet } from '@angular/router';
-import { NavigationComponent } from './shared/components/navigation/navigation.component';
-import { FooterComponent } from './shared/components/footer/footer.component';
-import {} from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { IMAGE_LOADER, ImageLoaderConfig } from '@angular/common';
+
+import { NavigationComponent } from "./shared/components/navigation/navigation.component";
+import { FooterComponent } from "./shared/components/footer/footer.component";
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [
-    RouterLink,
-    CommonModule,
-    RouterLink,
-    RouterOutlet,
-    NavigationComponent,
-    FooterComponent,
-    NgOptimizedImage,
-  ],
+  imports: [RouterOutlet, NavigationComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   providers: [
     {
       provide: IMAGE_LOADER,
       useValue: (config: ImageLoaderConfig) => {
-        let url = 'http://localhost:4200';
-        // let url = 'https://www.personal-cleaner.com';
+        let url = 'https://www.personal-cleaner.com';
 
         if (!config.src.endsWith('.webp')) {
           return url + config.src;
@@ -46,4 +31,4 @@ import {} from '@angular/core';
     },
   ],
 })
-export class AppComponent {}
+export class AppComponent { }

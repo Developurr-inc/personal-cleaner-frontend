@@ -1,4 +1,4 @@
-import { ImplementaionStepModel } from '../models/implementation-step.model';
+import { ImplementaionStepModel } from '../domain/implementation-step.model';
 
 export const IMPLEMENTATION_STEP: ImplementaionStepModel[] = [
   {

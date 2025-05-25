@@ -1,10 +1,10 @@
-import { SocialMediaLinkModel } from '../models/social-media-link.model';
+import { SocialMediaLinkModel } from '../domain/social-media-link.model';
 
 export const SOCIAL_MEDIA_LINKS: SocialMediaLinkModel[] = [
   {
     id: 1,
     color: '#206597',
-    link: 'https://www.linkedin.com/in/claudio-vilela-aguiar',
+    link: 'https://www.linkedin.com/company/personal-cleaner',
     name: 'linkedIn',
   },
   {

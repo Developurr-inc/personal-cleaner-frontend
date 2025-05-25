@@ -1,0 +1,13 @@
+<section class="my-10">
+  <div class="text-center text-3xl font-bold dark:text-neutral-100">
+    <h2>Áreas de atuação</h2>
+  </div>
+  <div class="grid snap-x grid-flow-col gap-6 overflow-auto py-10">
+    @for (segment of segments; track segment.id) {
+    <div class="snap-mandatory snap-center snap-always first:ms-[12.5vw] last:me-[12.5vw]">
+      <app-home-call-to-action [title]="segment.title" [content]="segment.content" [image]="segment.image"
+        [color]="segment.color" />
+    </div>
+    }
+  </div>
+</section>
