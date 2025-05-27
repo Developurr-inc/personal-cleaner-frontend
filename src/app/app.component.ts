@@ -4,6 +4,7 @@ import { IMAGE_LOADER, ImageLoaderConfig } from '@angular/common';
 
 import { NavigationComponent } from "./shared/components/navigation/navigation.component";
 import { FooterComponent } from "./shared/components/footer/footer.component";
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,7 @@ import { FooterComponent } from "./shared/components/footer/footer.component";
     {
       provide: IMAGE_LOADER,
       useValue: (config: ImageLoaderConfig) => {
-        let url = 'https://www.personal-cleaner.com';
+        let url = environment.apiUrl;
 
         if (!config.src.endsWith('.webp')) {
           return url + config.src;
