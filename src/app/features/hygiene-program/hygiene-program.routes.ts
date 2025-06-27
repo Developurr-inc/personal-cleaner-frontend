@@ -2,12 +2,12 @@ import { Routes } from '@angular/router';
 
 import { RouteNameEnum } from '../../core/enums/route-name.enum';
 import { RouteUrlEnum } from '../../core/enums/route-url.enum';
-import { HygieneProgramComponent } from './pages/hygiene-program.component';
+import { HygieneProgram } from './pages/hygiene-program';
 
 export const routes: Routes = [
   {
     path: RouteUrlEnum.IMPLEMENTATION,
-    component: HygieneProgramComponent,
+    component: HygieneProgram,
     title: `Personal Cleaner - ${RouteNameEnum.IMPLEMENTATION}`,
   },
 ];
