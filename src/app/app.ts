@@ -4,7 +4,7 @@ import { RouterOutlet } from '@angular/router';
 
 import { Navigation } from './shared/components/navigation/navigation';
 import { Footer } from './shared/components/footer/footer';
-import { environment } from '../environments/environment.development';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
