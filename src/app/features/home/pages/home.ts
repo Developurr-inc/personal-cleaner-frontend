@@ -8,6 +8,7 @@ import { HomeStats } from '../ui/home-stats/home-stats';
 
 import { SERVICES } from '../../../core/consts/services.const';
 import { SEGMENTS } from '../../../core/consts/segments.const';
+import { STATS } from '../../../core/consts/stats.const';
 
 @Component({
   selector: 'app-home',
@@ -24,4 +25,5 @@ import { SEGMENTS } from '../../../core/consts/segments.const';
 export class Home {
   services = SERVICES;
   segments = SEGMENTS;
+  stats = STATS;
 }
