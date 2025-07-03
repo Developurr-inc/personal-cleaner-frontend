@@ -17,7 +17,7 @@ export const PAPERS_PRODUCTS: ProductModel[] = [
   },
   {
     id: 3,
-    title: 'Folha Simples - ITI 01 - Toalha Interfolhada',
+    title: 'Folha Simples - ITI 01 - Toalha Interfolha',
     subtitle: '240 folhas 22 cm por 21,6 cm',
     image:
       '../../../../assets/papel/papel-iti01.webp',

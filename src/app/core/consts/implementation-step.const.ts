@@ -1,6 +1,6 @@
-import { ImplementaionStepModel } from '../domain/implementation-step.model';
+import { ImplementationStepModel } from '../domain/implementation-step.model';
 
-export const IMPLEMENTATION_STEP: ImplementaionStepModel[] = [
+export const IMPLEMENTATION_STEP: ImplementationStepModel[] = [
   {
     id: 1,
     title: '1 - CONHECER O CLIENTE',
@@ -15,11 +15,11 @@ export const IMPLEMENTATION_STEP: ImplementaionStepModel[] = [
           },
           {
             id: 2,
-            part: 'Analizar os resultados',
+            part: 'Analisar os resultados',
           },
           {
             id: 3,
-            part: 'Verificaros produtos e equipamentos',
+            part: 'Verificar os produtos e equipamentos',
           },
         ],
       },
@@ -83,7 +83,7 @@ export const IMPLEMENTATION_STEP: ImplementaionStepModel[] = [
           },
           {
             id: 3,
-            part: 'Minimize o despedício de químicos, água, energia e papéis',
+            part: 'Minimize o desperdício de químicos, água, energia e papéis',
           },
         ],
       },

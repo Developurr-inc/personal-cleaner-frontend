@@ -17,14 +17,14 @@ export const DISPENSERS_PRODUCTS_THIRD: ProductModel[] = [
   },
   {
     id: 3,
-    title: 'Dispenser guardanapeira torre',
+    title: 'Dispenser para guardanapo torre',
     subtitle: 'Para o seu time ter mais eficiência',
     image:
       '../../../../assets/dispensers/dispensersThird/dispenser-guardanapeira-torre.webp',
   },
   {
     id: 4,
-    title: 'Guardanapeira mesa',
+    title: 'Dispenser para guardanapo de mesa',
     subtitle: 'Possibilita colocar anúncios',
     image:
       '../../../../assets/dispensers/dispensersThird/guardanapeira-mesa.webp',

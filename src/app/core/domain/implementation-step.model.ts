@@ -1,4 +1,4 @@
-export type ImplementaionStepModel = {
+export type ImplementationStepModel = {
   id: number;
   title: string;
   section: sectionModel[];
